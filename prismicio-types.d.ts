@@ -33,6 +33,17 @@ interface AboutDocumentData {
   subtitle: prismic.KeyTextField;
 
   /**
+   * Description field in *About*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about.description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  description: prismic.KeyTextField;
+
+  /**
    * Slice Zone field in *About*
    *
    * - **Field Type**: Slice Zone
