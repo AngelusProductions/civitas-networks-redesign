@@ -1,10 +1,12 @@
 import { createClient } from "@/prismicio";
+
 import { About } from "./types";
+import { getMetadata } from "./metadata";
+
+const client = createClient();
 
 export default async function About() {
-  const client = createClient();
-  const page = await client.getSingle("about");
-  const data: About = page.data;
+  const { data }: { data: About } = await client.getSingle("about");
 
   return (
     <main>
@@ -13,4 +15,8 @@ export default async function About() {
       <p>{data.description}</p>
     </main>
   );
+}
+
+export async function generateMetadata() {
+  return await getMetadata(client);
 }
