@@ -22,7 +22,6 @@ export async function getMetadata(client: any): Promise<Metadata> {
           alt: data.meta_title?.toString(),
         },
       ],
-      ],
     }
   };
 }

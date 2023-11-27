@@ -7,11 +7,12 @@ const client = createClient();
 
 export default async function Home() {
   const { data }: { data: Home } = await client.getSingle("home");
-  console.log(data)
+
   return (
     <main>
-      <h1 className="font-display">{data.title}</h1>
-      <h2>{data.subtitle}</h2>
+      <div className="">
+        
+      </div>
     </main>
   );
 }

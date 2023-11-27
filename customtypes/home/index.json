@@ -27,6 +27,195 @@
           "placeholder": ""
         }
       },
+      "about": {
+        "type": "Text",
+        "config": {
+          "label": "About",
+          "placeholder": ""
+        }
+      },
+      "services": {
+        "type": "Text",
+        "config": {
+          "label": "Services",
+          "placeholder": ""
+        }
+      },
+      "service_one_name": {
+        "type": "Text",
+        "config": {
+          "label": "Service One Name",
+          "placeholder": ""
+        }
+      },
+      "service_one_description": {
+        "type": "Text",
+        "config": {
+          "label": "Service One Description",
+          "placeholder": ""
+        }
+      },
+      "service_two_name": {
+        "type": "Text",
+        "config": {
+          "label": "Service Two Name",
+          "placeholder": ""
+        }
+      },
+      "service_two_description": {
+        "type": "Text",
+        "config": {
+          "label": "Service Two Description",
+          "placeholder": ""
+        }
+      },
+      "service_three_name": {
+        "type": "Text",
+        "config": {
+          "label": "Service Three Name",
+          "placeholder": ""
+        }
+      },
+      "service_three_description": {
+        "type": "Text",
+        "config": {
+          "label": "Service Three Description",
+          "placeholder": ""
+        }
+      },
+      "why_civitas_title": {
+        "type": "Text",
+        "config": {
+          "label": "Why Civitas Title",
+          "placeholder": ""
+        }
+      },
+      "why_civitas_paragraph_one": {
+        "type": "Text",
+        "config": {
+          "label": "Why Civitas Paragraph One",
+          "placeholder": ""
+        }
+      },
+      "why_civitas_paragraph_two": {
+        "type": "Text",
+        "config": {
+          "label": "Why Civitas Paragraph Two",
+          "placeholder": ""
+        }
+      },
+      "why_civitas_paragraph_three": {
+        "type": "Text",
+        "config": {
+          "label": "Why Civitas Paragraph Three",
+          "placeholder": ""
+        }
+      },
+      "why_civitas_paragraph_four": {
+        "type": "Text",
+        "config": {
+          "label": "Why Civitas Paragraph Four",
+          "placeholder": ""
+        }
+      },
+      "faq_one_title": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ One Title",
+          "placeholder": ""
+        }
+      },
+      "faq_one_description": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ One Description",
+          "placeholder": ""
+        }
+      },
+      "faq_two_title": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Two Title",
+          "placeholder": ""
+        }
+      },
+      "faq_two_description_intro": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Two Description Intro",
+          "placeholder": ""
+        }
+      },
+      "faq_two_description_bullet_one": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Two Description Bullet One",
+          "placeholder": ""
+        }
+      },
+      "faq_two_description_bullet_two": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Two Description Bullet Two",
+          "placeholder": ""
+        }
+      },
+      "faq_two_description_bullet_three": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Two Description Bullet Three",
+          "placeholder": ""
+        }
+      },
+      "faq_two_description_bullet_four": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Two Description Bullet Four",
+          "placeholder": ""
+        }
+      },
+      "faq_three_title": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Three Title",
+          "placeholder": ""
+        }
+      },
+      "faq_three_description": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Three Description",
+          "placeholder": ""
+        }
+      },
+      "faq_four_title": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Four Title",
+          "placeholder": ""
+        }
+      },
+      "faq_four_description": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Four Description",
+          "placeholder": ""
+        }
+      },
+      "contact_title": {
+        "type": "Text",
+        "config": {
+          "label": "Contact Title",
+          "placeholder": ""
+        }
+      },
+      "contact_description": {
+        "type": "Text",
+        "config": {
+          "label": "Contact Description",
+          "placeholder": ""
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

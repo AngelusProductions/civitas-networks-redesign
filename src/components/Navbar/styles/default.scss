@@ -1,0 +1,23 @@
+
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Lexend', sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    align-items: center;
+    height: 80px;
+
+    ul {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    #navbarContactButton {
+        border-radius: 32px;
+        padding: 16px 24px;
+        border: 1px solid;
+    }
+}

@@ -127,6 +127,303 @@ interface HomeDocumentData {
   subtitle: prismic.KeyTextField;
 
   /**
+   * About field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.about
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  about: prismic.KeyTextField;
+
+  /**
+   * Services field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.services
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  services: prismic.KeyTextField;
+
+  /**
+   * Service One Name field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.service_one_name
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  service_one_name: prismic.KeyTextField;
+
+  /**
+   * Service One Description field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.service_one_description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  service_one_description: prismic.KeyTextField;
+
+  /**
+   * Service Two Name field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.service_two_name
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  service_two_name: prismic.KeyTextField;
+
+  /**
+   * Service Two Description field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.service_two_description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  service_two_description: prismic.KeyTextField;
+
+  /**
+   * Service Three Name field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.service_three_name
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  service_three_name: prismic.KeyTextField;
+
+  /**
+   * Service Three Description field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.service_three_description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  service_three_description: prismic.KeyTextField;
+
+  /**
+   * Why Civitas Title field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.why_civitas_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  why_civitas_title: prismic.KeyTextField;
+
+  /**
+   * Why Civitas Paragraph One field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.why_civitas_paragraph_one
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  why_civitas_paragraph_one: prismic.KeyTextField;
+
+  /**
+   * Why Civitas Paragraph Two field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.why_civitas_paragraph_two
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  why_civitas_paragraph_two: prismic.KeyTextField;
+
+  /**
+   * Why Civitas Paragraph Three field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.why_civitas_paragraph_three
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  why_civitas_paragraph_three: prismic.KeyTextField;
+
+  /**
+   * Why Civitas Paragraph Four field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.why_civitas_paragraph_four
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  why_civitas_paragraph_four: prismic.KeyTextField;
+
+  /**
+   * FAQ One Title field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.faq_one_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  faq_one_title: prismic.KeyTextField;
+
+  /**
+   * FAQ One Description field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.faq_one_description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  faq_one_description: prismic.KeyTextField;
+
+  /**
+   * FAQ Two Title field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.faq_two_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  faq_two_title: prismic.KeyTextField;
+
+  /**
+   * FAQ Two Description Intro field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.faq_two_description_intro
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  faq_two_description_intro: prismic.KeyTextField;
+
+  /**
+   * FAQ Two Description Bullet One field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.faq_two_description_bullet_one
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  faq_two_description_bullet_one: prismic.KeyTextField;
+
+  /**
+   * FAQ Two Description Bullet Two field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.faq_two_description_bullet_two
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  faq_two_description_bullet_two: prismic.KeyTextField;
+
+  /**
+   * FAQ Two Description Bullet Three field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.faq_two_description_bullet_three
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  faq_two_description_bullet_three: prismic.KeyTextField;
+
+  /**
+   * FAQ Two Description Bullet Four field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.faq_two_description_bullet_four
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  faq_two_description_bullet_four: prismic.KeyTextField;
+
+  /**
+   * FAQ Three Title field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.faq_three_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  faq_three_title: prismic.KeyTextField;
+
+  /**
+   * FAQ Three Description field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.faq_three_description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  faq_three_description: prismic.KeyTextField;
+
+  /**
+   * FAQ Four Title field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.faq_four_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  faq_four_title: prismic.KeyTextField;
+
+  /**
+   * FAQ Four Description field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.faq_four_description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  faq_four_description: prismic.KeyTextField;
+
+  /**
+   * Contact Title field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.contact_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  contact_title: prismic.KeyTextField;
+
+  /**
+   * Contact Description field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.contact_description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  contact_description: prismic.KeyTextField;
+
+  /**
    * Slice Zone field in *Home*
    *
    * - **Field Type**: Slice Zone
