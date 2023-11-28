@@ -1,23 +1,44 @@
-
 #navbar {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lexend", sans-serif;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  align-items: center;
+  height: 80px;
+  padding: 0 5%;
+
+  ul {
     display: flex;
+    width: 67%;
     justify-content: space-around;
-    font-family: 'Lexend', sans-serif;
-    text-transform: uppercase;
-    border-bottom: 1px solid black;
-    align-items: center;
-    height: 80px;
+  }
 
-    ul {
-        display: flex;
-        width: 50%;
-        justify-content: space-around;
-    }
+  #navbarContactButton {
+    border-radius: 32px;
+    padding: 16px 24px;
+    border: 1px solid;
+    font-size: 1.5vw;
+  }
 
-    #navbarContactButton {
-        border-radius: 32px;
-        padding: 16px 24px;
-        border: 1px solid;
+  #navbarMobileContainer {
+    display: flex;
+    width: 110px;
+    justify-content: space-between;
+
+    #navbarMobileMenu {
+      display: none;
+      position: absolute;
+      height: 200px;
+      flex-direction: column;
+      top: 80px;
+      text-align: right;
+      width: 130px;
+
+      &.open {
+        display: flex !important;
+      }
     }
+  }
 }

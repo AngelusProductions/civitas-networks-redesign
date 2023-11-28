@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Lexend', sans-serif;
+}
+
+.clickable {
+    transition: 150ms ease-in-out;
+    
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    &:active {
+        transform: scale(0.95);
+    }
+}
