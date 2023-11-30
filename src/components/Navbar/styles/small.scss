@@ -1,0 +1,13 @@
+@media (max-width: 640px) {
+  #navbar {
+    ul {
+        display: none;
+    }
+    #navbarContactButton {
+        display: none;
+    }
+  }
+  #navbarMobileContainer {
+    display: flex !important;
+  }
+}
