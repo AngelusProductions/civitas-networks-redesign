@@ -1,13 +1,13 @@
 export default [{
   name: 'Home',
-  link: '/'
+  url: '/'
 }, {
   name: 'About Civitas',
-  link: '/about'
+  url: '/about'
 }, {
   name: 'Services',
-  link: '/services'
+  url: '/services'
 }, {
   name: 'Team & Partners',
-  link: '/team'
+  url: '/team'
 }]

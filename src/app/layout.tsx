@@ -5,6 +5,7 @@ import clsx from "clsx";
 import "./globals.scss";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
