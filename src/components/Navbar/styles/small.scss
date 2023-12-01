@@ -9,5 +9,11 @@
   }
   #navbarMobileContainer {
     display: flex !important;
+
+    li {
+        a {
+            font-size: 4vw;
+        }
+    }
   }
 }
