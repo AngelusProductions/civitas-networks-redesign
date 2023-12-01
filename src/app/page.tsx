@@ -25,11 +25,11 @@ export default async function Home() {
                   width={500}
                   height={500}
                 /> */}
-                <div id='homeAboutSectionContent'>
+                {/* <div id='homeAboutSectionContent'>
                   <h2>About</h2>
                   <hr />
                   <p>{data.about}</p>
-                </div>
+                </div> */}
             </section>
         </main>
     );
