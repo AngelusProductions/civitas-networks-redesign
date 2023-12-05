@@ -20,10 +20,17 @@
           "placeholder": "The page title"
         }
       },
-      "subtitle": {
+      "subtitle1": {
         "type": "Text",
         "config": {
-          "label": "Subtitle",
+          "label": "Subtitle1",
+          "placeholder": ""
+        }
+      },
+      "subtitle2": {
+        "type": "Text",
+        "config": {
+          "label": "Subtitle2",
           "placeholder": ""
         }
       },

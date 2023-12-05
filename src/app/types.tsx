@@ -2,7 +2,8 @@ import { KeyTextField } from "@prismicio/client";
 
 export type Home = {
     title: KeyTextField;
-    subtitle: KeyTextField;
+    subtitle1: KeyTextField;
+    subtitle2: KeyTextField;
     about: KeyTextField;
     services: KeyTextField;
     service_one_name: KeyTextField;

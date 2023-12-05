@@ -1,0 +1,49 @@
+@media (min-width: 1440px) {
+  #home {
+    padding: 2.5% 5%;
+
+    #homeTitleSection {
+      #homeTitle {
+        font-size: 3vw;
+        width: 100%;
+      }
+
+      h2 {
+        font-size: 1.5vw;
+        font-weight: 400;
+        width: 67%;
+      }
+
+      #homeSubtitle1 {
+        margin-top: 1.5vw;
+      }
+
+      #homeSubtitle2 {
+        margin-bottom: 2.5vw;
+      }
+
+      #homeHeroContainer {
+        #homeHero {
+          width: 46%;
+          margin: auto;
+        }
+
+        #homeHeroBackground {
+          top: -2vw;
+          right: 22vw;
+          height: 32vw;
+          width: 7vw;
+        }
+      }
+
+      #cFlakesHomeHero {
+        width: 33vw;
+      }
+
+      #cFlakesHomeHero2 {
+        width: 46%;
+        left: 27%;
+      }
+    }
+  }
+}

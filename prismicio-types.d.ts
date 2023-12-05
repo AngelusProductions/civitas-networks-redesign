@@ -116,15 +116,26 @@ interface HomeDocumentData {
   title: prismic.KeyTextField;
 
   /**
-   * Subtitle field in *Home*
+   * Subtitle1 field in *Home*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: home.subtitle
+   * - **API ID Path**: home.subtitle1
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  subtitle: prismic.KeyTextField;
+  subtitle1: prismic.KeyTextField;
+
+  /**
+   * Subtitle2 field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.subtitle2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  subtitle2: prismic.KeyTextField;
 
   /**
    * About field in *Home*

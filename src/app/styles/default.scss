@@ -1,39 +1,61 @@
 @import "../../constants/colors.scss";
 
 #home {
-    font-family: "Lexend", sans-serif;
+  font-family: "Cabin", sans-serif;
+  padding: 10%;
 
-    #homeTitleSection {
-        padding: 33vh 10%;
-
-        h1 {
-            font-size: 6vw;
-            font-weight: bold;
-        }
-
-        h2 {
-            font-size: 2.5vw;
-            font-weight: 400;
-            color: $gray;
-        }
+  #homeTitleSection {
+    h1,
+    h2 {
+      color: $blue;
     }
 
-    #homeAboutSection {
-        display: flex;
-        #homeAboutSectionImage {
-            width: 33%;
-            display: inline-block
-        }
-        #homeAboutSectionContent {
-            width: 67%;
-
-            h2 {
-                font-weight: bold;
-            }
-
-            hr {
-                margin: 10px 0;
-            }
-        }
+    #homeTitle {
+      font-size: 4.8vw;
+      font-weight: bold;
+      width: 67%;
     }
+
+    h2 {
+      font-size: 1.6vw;
+      font-weight: 400;
+      width: 67%;
+    }
+
+    #homeSubtitle1 {
+      margin-top: 2.5vw;
+    }
+    #homeSubtitle2 {
+      margin-bottom: 5vw;
+    }
+
+    #homeHeroContainer {
+      position: relative;
+
+      #homeHero {
+        width: 100%;
+      }
+
+      #homeHeroBackground {
+        position: absolute;
+        top: -5vw;
+        right: -5vw;
+        height: 63vw;
+        width: 15vw;
+        background: $blue;
+        z-index: -1;
+      }
+    }
+
+    #cFlakesHomeHero1 {
+      top: 80px;
+      z-index: -99;
+      right: 0;
+      width: 44vw;
+    }
+    #cFlakesHomeHero2 {
+        width: 100%;
+        bottom: 0;
+    }
+  }
 }
