@@ -11,13 +11,12 @@ import i from "@/constants/assets";
 
 import "./styles/index.scss";
 
-const Navbar = () => {
+const Navbar = ({ isMenuOpen, setIsMenuOpen }: { isMenuOpen: boolean, setIsMenuOpen: Function }) => {
   const router = useRouter();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav id="navbar">
-      <Logo id='navbarLogo' />
+      <Logo id='navbarLogo' light />
       <NavMenu id='navbarMenu' />
       <Link 
         href="/contact" 

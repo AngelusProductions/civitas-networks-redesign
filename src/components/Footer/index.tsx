@@ -9,12 +9,12 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div id='footerTop' className='footerSection'>
-        <Logo id="footerLogo" />
+        <Logo id="footerLogo" light={false} />
         <NavMenu id="footerNavMenu" />
       </div>
       <hr />
       <div id='footerBottom' className='footerSection'>
-        <p id='footerRights'>© {new Date().getFullYear()} Civitas, All Rights Reserved</p>
+        <p id='footerRights'>© {new Date().getFullYear()} Civitas Networks, All Rights Reserved</p>
         <div id='footerInfoContainer'>
           <Link href="/privacy" id='footerPrivacy' className='clickable'>
             Privacy Policy

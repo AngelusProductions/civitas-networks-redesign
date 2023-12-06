@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+
+import i from "@/constants/assets";
 
 import "./styles/index.scss";
 
-const Logo = ({ id }: { id: string }) => {
+const Logo = ({ id, light = false }: { id: string, light: boolean }) => {
+  const src = light ? i.logos.light : i.logos.dark;
   return (
     <Link href='/'>
       <Image
@@ -13,7 +15,7 @@ const Logo = ({ id }: { id: string }) => {
         height={60}
         alt="Civitas Logo"
         className='logo clickable'
-        src="https://www.civitasnetworks.com/static/media/logoBlue.d0b5fe85.png"
+        src={src}
       />
     </Link>
   )

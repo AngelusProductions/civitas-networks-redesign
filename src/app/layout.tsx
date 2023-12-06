@@ -1,34 +1,26 @@
-import { Nunito, Nunito_Sans } from "next/font/google";
-import Head from "next/head";
-
-import clsx from "clsx";
-import "./globals.scss";
+'use client';
+import { useState } from "react";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const nunito = Nunito({
-  subsets: ["latin"],
-  variable: "--font-nunito",
-  display: "swap"
-});
-
-const nunitoSans = Nunito_Sans({
-  subsets: ["latin"],
-  variable: "--font-nunito-sans",
-  display: "swap"
-});
+import "./globals.scss";
 
 export default function RootLayout({
   children
 }: {
   children: React.ReactNode;
 }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <html lang="en" className={clsx(nunito.variable, nunitoSans.variable)}>
+    <html lang="en">
       <body>
-        <Navbar />
-        {children}
+        <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        <div id='mainWrapper' onClick={() => {
+          if (isMenuOpen) setIsMenuOpen(false);
+        }}>
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

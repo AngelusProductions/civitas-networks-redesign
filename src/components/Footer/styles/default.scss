@@ -1,7 +1,9 @@
+@import '../../../constants/colors.scss';
+
 #footer {
-  text-transform: uppercase;
   padding: 80px;
   font-size: 1vw;
+  font-family: 'Nunito';
 
   .footerSection {
     display: flex;
@@ -22,6 +24,7 @@
       li {
         a {
           font-size: 1vw;
+          color: black;
         }
       }
     }
