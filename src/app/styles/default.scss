@@ -4,7 +4,12 @@
   font-family: "Cabin", sans-serif;
   padding: 10%;
 
-  #homeTitleSection {
+  .homeSection {
+    position: relative;
+    margin-bottom: 10vw;
+  }
+
+  section#homeTitleSection {
     h1,
     h2 {
       color: $blue;
@@ -36,7 +41,7 @@
         width: 100%;
       }
 
-      #homeHeroBackground {
+      #homeHeroImageBackground {
         position: absolute;
         top: -5vw;
         right: -5vw;
@@ -54,8 +59,70 @@
       width: 44vw;
     }
     #cFlakesHomeHero2 {
-        width: 100%;
-        bottom: 0;
+      width: 100%;
+      bottom: 0;
+    }
+  }
+
+  section#homeAboutSection {
+    #homeAboutContainer {
+      display: flex;
+      justify-content: space-between;
+      background: $blue;
+      padding: 5vw;
+
+      #homeAboutImageContainer {
+        position: relative;
+        width: 200vw;
+
+        #homeAboutImage {
+          height: 100%;
+          object-fit: cover;
+          z-index: 1;
+          position: relative;
+        }
+
+        img#cFlakesHomeAbout3 {
+          bottom: 0;
+        }
+
+        #homeAboutImageBackground {
+          height: 41vw;
+          position: absolute;
+          top: -2.5vw;
+          width: 15vw;
+          left: -2.5vw;
+          background: $orange;
+        }
+      }
+
+      #homeAboutTextContainer {
+        color: $white;
+        padding: 5vw;
+
+        h1 {
+          font-size: 3.5vw;
+          font-weight: bold;
+          margin-bottom: 2.5vw;
+        }
+
+        p {
+          font-family: "Nunito";
+          font-size: 1.5vw;
+        }
+      }
+    }
+
+    img#cFlakesHomeAbout1 {
+      left: -10vw;
+      top: 0;
+      width: 25vw;
+    }
+
+    img#cFlakesHomeAbout2 {
+      right: -10vw;
+      bottom: -14vw;
+      width: 25vw;
     }
   }
 }

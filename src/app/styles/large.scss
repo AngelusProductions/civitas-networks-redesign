@@ -2,7 +2,7 @@
   #home {
     padding: 2.5% 5%;
 
-    #homeTitleSection {
+    section#homeTitleSection {
       #homeTitle {
         font-size: 3vw;
         width: 100%;
@@ -28,7 +28,7 @@
           margin: auto;
         }
 
-        #homeHeroBackground {
+        #homeHeroImageBackground {
           top: -3vw;
           right: 15vw;
           height: 42vw;
@@ -43,6 +43,16 @@
       #cFlakesHomeHero2 {
         width: 60%;
         left: 20%;
+      }
+    }
+
+    section#homeAboutSection {
+      #homeAboutContainer {
+        #homeAboutImageContainer {
+          #homeAboutImageBackground {
+            height: 38.5vw;
+          }
+        }
       }
     }
   }

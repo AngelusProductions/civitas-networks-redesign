@@ -10,10 +10,20 @@ export default {
         contact: `${bucketURL}/icons/contact.svg`,
     },
     cFlakes: {
-        one: `${bucketURL}/cFlakes/cFlakes1.svg`,
-        two: `${bucketURL}/cFlakes/cFlakes2.svg`,
+        home: {
+            hero: {
+                one: `${bucketURL}/cFlakes/cFlakesHomeHero1.svg`,
+                two: `${bucketURL}/cFlakes/cFlakesHomeHero2.svg`,
+            },
+            about: {
+                one: `${bucketURL}/cFlakes/cFlakesHomeAbout1.svg`,
+                two: `${bucketURL}/cFlakes/cFlakesHomeAbout2.svg`,
+                three: `${bucketURL}/cFlakes/cFlakesHomeAbout3.svg`,
+            }
+        }
     },
     home: {
         hero: `${bucketURL}/home/homeHero.png`,
+        about: `${bucketURL}/home/homeAbout.png`,
     }
 }
