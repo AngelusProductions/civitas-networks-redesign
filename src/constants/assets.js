@@ -19,11 +19,15 @@ export default {
                 one: `${bucketURL}/cFlakes/cFlakesHomeAbout1.svg`,
                 two: `${bucketURL}/cFlakes/cFlakesHomeAbout2.svg`,
                 three: `${bucketURL}/cFlakes/cFlakesHomeAbout3.svg`,
-            }
+            },
+            services: {
+                one: `${bucketURL}/cFlakes/cFlakesHomeServices1.svg`,
+            },
         }
     },
     home: {
-        hero: `${bucketURL}/home/homeHero.png`,
-        about: `${bucketURL}/home/homeAbout.png`,
+        hero: `${bucketURL}/home/homeHero.mp4`,
+        about: `${bucketURL}/home/homeAbout.mp4`,
+        services: `${bucketURL}/home/homeServices.webp`,
     }
 }

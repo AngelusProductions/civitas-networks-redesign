@@ -160,6 +160,28 @@ interface HomeDocumentData {
   services: prismic.KeyTextField;
 
   /**
+   * Services Experience field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.services_experience
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  services_experience: prismic.KeyTextField;
+
+  /**
+   * Services Projects field in *Home*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: home.services_projects
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  services_projects: prismic.KeyTextField;
+
+  /**
    * Service One Name field in *Home*
    *
    * - **Field Type**: Text

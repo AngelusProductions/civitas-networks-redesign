@@ -6,6 +6,8 @@ export type Home = {
     subtitle2: KeyTextField;
     about: KeyTextField;
     services: KeyTextField;
+    services_experience: KeyTextField;
+    services_projects: KeyTextField;
     service_one_name: KeyTextField;
     service_one_description: KeyTextField;
     service_two_name: KeyTextField;

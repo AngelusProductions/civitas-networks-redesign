@@ -48,6 +48,20 @@
           "placeholder": ""
         }
       },
+      "services_experience": {
+        "type": "Text",
+        "config": {
+          "label": "Services Experience",
+          "placeholder": ""
+        }
+      },
+      "services_projects": {
+        "type": "Text",
+        "config": {
+          "label": "Services Projects",
+          "placeholder": ""
+        }
+      },
       "service_one_name": {
         "type": "Text",
         "config": {
