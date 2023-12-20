@@ -102,7 +102,7 @@ export default async function Home() {
             </section>
             <section id='homeFaqSection' className='homeSection'>
                 <h1 id='homeFaqTitle' className='homeTitle'>FAQ</h1>
-                {/* <img id='cFlakesHomeFaq1' src={i.cFlakes.home.faq.one} className='cFlakes back' /> */}
+                <img id='cFlakesHomeFaq1' src={i.cFlakes.home.faq.one} className='cFlakes back' />
                 <FAQ id='faqHome1' title={data.faq_one_title} description={data.faq_one_description} />
                 <FAQ id='faqHome2' title={data.faq_two_title} renderDescription={
                     <div id='faqHome2TextContainer'>
