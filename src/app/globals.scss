@@ -2,33 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import '../constants/colors.scss';
+
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 
 body {
-    font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
 }
 
 .clickable {
-    transition: 150ms ease-in-out;
-    
-    &:hover {
-        cursor: pointer;
-        transform: scale(1.05);
-    }
-    &:active {
-        transform: scale(0.95);
-    }
+  transition: 150ms ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
 }
 
 .cFlakes {
-    position: absolute;
+  position: absolute;
+  z-index: -99;
+
+  &.back {
     z-index: -99;
+  }
 
-    &.back {
-        z-index: -99;
-    }
+  &.front {
+    z-index: 99;
+  }
+}
 
-    &.front {
-        z-index: 99;
-    }
+.cta {
+  text-align: center;
+  width: 100%;
+  background: $orange;
+  padding: 20px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 32px;
+  font-size: 1.5vw;
 }

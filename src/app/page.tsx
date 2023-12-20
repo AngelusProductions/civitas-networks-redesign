@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { createClient } from "@/prismicio";
 
 import { Home } from "./types";
@@ -5,8 +6,9 @@ import { getMetadata } from "./metadata";
 
 import i from '@/constants/assets'
 
+import FAQ from "@/components/FAQ";
+
 import "./styles/index.scss";
-import Link from "next/link";
 
 const client = createClient();
 
@@ -62,6 +64,7 @@ export default async function Home() {
                     <div id='homeServicesImageContainer'>
                         <img id='homeServicesImage' src={i.home.services} />
                         <div id='homeServicesImageBackground' />
+                        <img id='cFlakesHomeServices1' src={i.cFlakes.home.services.one} className='cFlakes front' />
                     </div>
                     <div id='homeServicesTextContainer'>
                         <div id='homeServicesText1' className='homeServicesTextContainer'>
@@ -78,10 +81,42 @@ export default async function Home() {
                         </div>
                         <div id='homeServicesText4' className='homeServicesTextContainer'>
                             <h3 id='homeServicesTextTitle4' className='homeServicesTextTitle'>Want to know more?</h3>
-                            <Link href='/services' id='homeServicesTextButton' className='clickable'>Visit Services Page</Link>
+                            <Link href='/services' id='homeServicesTextButton' className='cta clickable'>Visit Services Page</Link>
                         </div>
                     </div>
                 </div>
+            </section>
+            <section id='homeWhyCivitasSection' className='homeSection'>
+                <div id='homeWhyCivitasLeftContainer'>
+                    <h1 id='homeWhyCivitasTitle' className='homeTitle'>{data.why_civitas_title}</h1>
+                    <p className='homeWhyCivitasText'>{data.why_civitas_paragraph_one}</p>
+                    <p className='homeWhyCivitasText'>{data.why_civitas_paragraph_two}</p>
+                    <p className='homeWhyCivitasText'>{data.why_civitas_paragraph_three}</p>
+                    <b className='homeWhyCivitasText'>{data.why_civitas_paragraph_four}</b>
+                    <Link href='/about' id='homeWhyCivitasButton' className='cta clickable'>Visit About Page</Link>
+                </div>
+                <div id='homeWhyCivitasRightContainer'>
+                    <img id='homeWhyCivitasImage' src={i.home.whyCivitas} />
+                    <img id='cFlakesHomeWhyCivitas1' src={i.cFlakes.home.whyCivitas.one} className='cFlakes back' />
+                </div>
+            </section>
+            <section id='homeFaqSection' className='homeSection'>
+                <h1 id='homeFaqTitle' className='homeTitle'>FAQ</h1>
+                {/* <img id='cFlakesHomeFaq1' src={i.cFlakes.home.faq.one} className='cFlakes back' /> */}
+                <FAQ id='faqHome1' title={data.faq_one_title} description={data.faq_one_description} />
+                <FAQ id='faqHome2' title={data.faq_two_title} renderDescription={
+                    <div id='faqHome2TextContainer'>
+                        <b>{data.faq_two_description_intro}</b>
+                        <ul>
+                            <li>- {data.faq_two_description_bullet_one}</li>
+                            <li>- {data.faq_two_description_bullet_two}</li>
+                            <li>- {data.faq_two_description_bullet_three}</li>
+                            <li>- {data.faq_two_description_bullet_four}</li>
+                        </ul>
+                    </div>
+                }/>
+                <FAQ id='faqHome3' title={data.faq_three_title} description={data.faq_three_description} />
+                <FAQ id='faqHome4' title={data.faq_four_title} description={data.faq_four_description} />
             </section>
         </main>
     );

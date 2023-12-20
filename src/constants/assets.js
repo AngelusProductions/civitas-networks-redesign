@@ -6,6 +6,7 @@ export default {
         dark: `${bucketURL}/logos/logoDark.svg`,
     },
     icons: {
+        arrowUp: `${bucketURL}/icons/arrowUp.svg`,
         burger: `${bucketURL}/icons/burger.svg`,
         contact: `${bucketURL}/icons/contact.svg`,
     },
@@ -23,11 +24,18 @@ export default {
             services: {
                 one: `${bucketURL}/cFlakes/cFlakesHomeServices1.svg`,
             },
+            whyCivitas: {
+                one: `${bucketURL}/cFlakes/cFlakesHomeWhyCivitas1.svg`,
+            },
+            faq: {
+                one: `${bucketURL}/cFlakes/cFlakesHomeFaq1.svg`,
+            },
         }
     },
     home: {
         hero: `${bucketURL}/home/homeHero.mp4`,
         about: `${bucketURL}/home/homeAbout.mp4`,
         services: `${bucketURL}/home/homeServices.webp`,
+        whyCivitas: `${bucketURL}/home/homeWhyCivitas.jpeg`,
     }
 }

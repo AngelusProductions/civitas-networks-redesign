@@ -2,6 +2,7 @@
 
 #home {
   padding: 10%;
+  color: $blue;
 
   .homeSection {
     position: relative;
@@ -9,7 +10,6 @@
   }
 
   .homeTitle {
-    color: $blue;
     font-size: 4.8vw;
     font-family: "Cabin";
   }
@@ -184,12 +184,15 @@
       }
       div#homeServicesImageBackground {
         background: $blue;
-        height: 62.5vw;
+        height: 62vw;
         width: 21vw;
         position: absolute;
         top: -3vw;
         left: -3vw;
         z-index: -1;
+      }
+      #cFlakesHomeServices1 {
+        bottom: 0;
       }
       div#homeServicesTextContainer {
         width: 50%;
@@ -224,18 +227,50 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-
-          a#homeServicesTextButton {
-            text-align: center;
-            width: 100%;
-            background: $orange;
-            padding: 5%;
-            text-transform: uppercase;
-            color: white;
-            border-radius: 32px;
-            font-size: 1.5vw;
-          }
         }
+      }
+    }
+  }
+
+  section#homeWhyCivitasSection {
+    display: flex;
+    color: $blue;
+
+    div#homeWhyCivitasLeftContainer {
+      width: 67%;
+      display: inline-flex;
+      flex-direction: column;
+
+      p {
+        margin-bottom: 2%;
+        font-family: "Nunito";
+      }
+
+      .homeWhyCivitasText {
+        font-size: 1.5vw;
+      }
+
+      a#homeWhyCivitasButton {
+        width: fit-content;
+        margin-top: 5%;
+      }
+    }
+    div#homeWhyCivitasRightContainer {
+      width: 33%;
+      display: inline-flex;
+      position: relative;
+
+      img#homeWhyCivitasImage {
+        object-fit: cover;
+        object-position: center;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      img#cFlakesHomeWhyCivitas1 {
+        position: absolute;
+        right: -10vw;
+        top: -10vw;
       }
     }
   }
