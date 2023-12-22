@@ -75,14 +75,14 @@
       display: flex;
       justify-content: space-between;
       background: $blue;
-      padding: 5vw;
+      padding: 50px;
 
       #homeAboutImageContainer {
         position: relative;
-        width: 200vw;
 
         #homeAboutImage {
-          height: 100%;
+          height: 350px;
+          width: 2700px;
           object-fit: cover;
           z-index: 1;
           position: relative;
@@ -93,28 +93,28 @@
         }
 
         #homeAboutImageBackground {
-          height: 41vw;
+          height: 400px;
           position: absolute;
-          top: -2.5vw;
-          width: 15vw;
-          left: -2.5vw;
+          top: -25px;
+          width: 150px;
+          left: -25px;
           background: $orange;
         }
       }
 
       #homeAboutTextContainer {
         color: $white;
-        padding: 5vw;
+        padding-left: 25px;
 
         h1 {
-          font-size: 3.5vw;
+          font-size: 30px;
           font-weight: bold;
-          margin-bottom: 2.5vw;
+          margin-bottom: 25px;
         }
 
         p {
           font-family: "Nunito";
-          font-size: 1.5vw;
+          font-size: 15px;
         }
       }
     }
@@ -122,13 +122,13 @@
     img#cFlakesHomeAbout1 {
       left: -10vw;
       top: 0;
-      width: 25vw;
+      width: 36vw;
     }
 
     img#cFlakesHomeAbout2 {
       right: -10vw;
-      bottom: -14vw;
-      width: 25vw;
+      bottom: -18vw;
+      width: 36vw;
     }
   }
 

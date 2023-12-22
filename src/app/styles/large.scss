@@ -1,4 +1,4 @@
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   #home {
     padding: 2.5% 5%;
 
@@ -47,16 +47,45 @@
     }
 
     section#homeAboutSection {
+      
       #homeAboutContainer {
+        width: 800px;
+        margin: auto;
+        padding: 50px;
+
         #homeAboutImageContainer {
+          width: 2500px !important;
+            height: 275px;
+
+          #homeAboutImage {
+            width: 2500px;
+            height: 275px !important;
+          }
+
+          img#cFlakesHomeAbout3 {
+            
+          }
+
           #homeAboutImageBackground {
-            height: 38.5vw;
+            height: 325px !important;
+          }
+        }
+
+        #homeAboutTextContainer {
+          padding: 0 25px;
+          h1 {
+            font-size: 40px;
+          }
+
+          p {
+            font-size: 15px;
           }
         }
       }
     }
 
     section#homeServicesSection {
+      
       #homeServicesBottomContainer {
         #homeServicesImageContainer {
           #homeServicesImageBackground {
