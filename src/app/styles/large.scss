@@ -2,6 +2,10 @@
   #home {
     padding: 2.5% 5%;
 
+    .homeTitle {
+      font-size: 40px;
+    }
+
     section#homeTitleSection {
       #homeTitle {
         font-size: 3vw;
@@ -47,7 +51,6 @@
     }
 
     section#homeAboutSection {
-      
       #homeAboutContainer {
         width: 800px;
         margin: auto;
@@ -55,7 +58,7 @@
 
         #homeAboutImageContainer {
           width: 2500px !important;
-            height: 275px;
+          height: 275px;
 
           #homeAboutImage {
             width: 2500px;
@@ -63,7 +66,6 @@
           }
 
           img#cFlakesHomeAbout3 {
-            
           }
 
           #homeAboutImageBackground {
@@ -85,14 +87,89 @@
     }
 
     section#homeServicesSection {
-      
-      #homeServicesBottomContainer {
-        #homeServicesImageContainer {
-          #homeServicesImageBackground {
-            height: 53.5vw;
+      div#homeServicesTopContainer {
+        div#homeServicesTitleContainer {
+          h2 {
+            font-size: 16px;
+          }
+        }
+
+        div#homeServicesStatsContainer {
+          .homeServicesStatContainer {
+            .homeServicesStatNumber {
+              font-size: 56px;
+            }
+
+            .homeServicesStatTitle {
+              font-size: 16px;
+            }
           }
         }
       }
+
+      #homeServicesBottomContainer {
+        div#homeServicesImageContainer {
+          img#homeServicesImage {
+          }
+        }
+
+        div#homeServicesImageBackground {
+          height: calc(100% + 6vw);
+        }
+
+        #cFlakesHomeServices1 {
+        }
+
+        div#homeServicesTextContainer {
+          .homeServicesTextContainer {
+            .homeServicesTextTitle {
+              font-size: 32px;
+            }
+
+            .homeServicesTextDescription {
+              font-size: 16px;
+            }
+          }
+
+          #homeServicesText4 {
+          }
+
+          #homeServicesTextButton {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    section#homeWhyCivitasSection {
+      div#homeWhyCivitasLeftContainer {
+        p {
+        }
+
+        .homeWhyCivitasText {
+          font-size: 16px;
+        }
+
+        a#homeWhyCivitasButton {
+          font-size: 16px;
+        }
+      }
+
+      div#homeWhyCivitasRightContainer {
+        img#homeWhyCivitasImage {
+        }
+
+        img#cFlakesHomeWhyCivitas1 {
+        }
+      }
+    }
+  }
+
+  section#homeFaqSection {
+    #cFlakesHomeFaq1 {
+      right: -5vw !important;
+      top: -10vw !important;
+      width: 25vw !important;
     }
   }
 }

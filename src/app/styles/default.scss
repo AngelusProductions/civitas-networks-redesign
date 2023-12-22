@@ -3,6 +3,7 @@
 #home {
   padding: 10%;
   color: $blue;
+  overflow: hidden;
 
   .homeSection {
     position: relative;
@@ -228,6 +229,10 @@
           flex-direction: column;
           justify-content: space-between;
         }
+
+        #homeServicesTextButton {
+          font-size: 1.5vw;
+        }
       }
     }
   }
@@ -241,6 +246,10 @@
       display: inline-flex;
       flex-direction: column;
 
+      #homeWhyCivitasTitle {
+        margin-bottom: 2.5%;
+      }
+
       p {
         margin-bottom: 2%;
         font-family: "Nunito";
@@ -253,6 +262,8 @@
       a#homeWhyCivitasButton {
         width: fit-content;
         margin-top: 5%;
+        margin-left: 0;
+        font-size: 1.5vw;
       }
     }
     div#homeWhyCivitasRightContainer {
@@ -277,7 +288,7 @@
 
   section#homeFaqSection {
     #cFlakesHomeFaq1 {
-      right: -5vw;
+      right: -10vw;
       width: 30vw;
       top: -10vw;
     }

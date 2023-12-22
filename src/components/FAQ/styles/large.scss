@@ -1,0 +1,36 @@
+@media (min-width: 1024px) {
+  .faq {
+    padding: 2.5%;
+
+    &#faqHome2 {
+      div#faqHome2TextContainer {
+        b {
+          font-size: 16px;
+        }
+
+        ul {
+          li {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .faqTitleContainer {
+      .faqTitle {
+        font-size: 32px;
+      }
+
+      .faqButton {
+        .faqButtonImage {
+          &.closed {
+          }
+        }
+      }
+    }
+
+    .faqDescription {
+      font-size: 16px;
+    }
+  }
+}
