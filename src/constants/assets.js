@@ -30,6 +30,10 @@ export default {
             faq: {
                 one: `${bucketURL}/cFlakes/cFlakesHomeFaq1.svg`,
             },
+            contact: {
+                one: `${bucketURL}/cFlakes/cFlakesHomeContact1.svg`,
+                two: `${bucketURL}/cFlakes/cFlakesHomeContact2.svg`,
+            },
         }
     },
     home: {
@@ -37,5 +41,6 @@ export default {
         about: `${bucketURL}/home/homeAbout.mp4`,
         services: `${bucketURL}/home/homeServices.webp`,
         whyCivitas: `${bucketURL}/home/homeWhyCivitas.jpeg`,
+        contact: `${bucketURL}/home/homeContact.mp4`,
     }
 }

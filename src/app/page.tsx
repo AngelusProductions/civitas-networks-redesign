@@ -9,6 +9,7 @@ import i from '@/constants/assets'
 import FAQ from "@/components/FAQ";
 
 import "./styles/index.scss";
+import Contact from "@/components/Contact";
 
 const client = createClient();
 
@@ -49,6 +50,7 @@ export default async function Home() {
                         <h1 id='homeServicesTitle' className='homeTitle'>Services</h1>
                         <h2 id='homeServicesSubtitle'>{data.services}</h2>
                     </div>
+                    <hr id='homeServicesDivider' />
                     <div id='homeServicesStatsContainer'>
                         <div className='homeServicesStatContainer'>
                             <h1 className='homeServicesStatNumber'>{data.services_experience}</h1>
@@ -117,6 +119,16 @@ export default async function Home() {
                 }/>
                 <FAQ id='faqHome3' title={data.faq_three_title} description={data.faq_three_description} />
                 <FAQ id='faqHome4' title={data.faq_four_title} description={data.faq_four_description} />
+            </section>
+            <section id='homeContactSection' className='homeSection'>
+                <img id='cFlakesHomeContact1' src={i.cFlakes.home.contact.one} className='cFlakes back' />
+                <img id='cFlakesHomeContact2' src={i.cFlakes.home.contact.two} className='cFlakes back' />
+                <Contact 
+                    id='contactHome' 
+                    title={data.contact_title} 
+                    description={data.contact_description} 
+                    videoUrl={i.home.contact}
+                />
             </section>
         </main>
     );

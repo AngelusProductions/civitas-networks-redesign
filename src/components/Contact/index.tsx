@@ -1,17 +1,22 @@
-'use client';
-import { useState } from "react";
 import { KeyTextField } from "@prismicio/client";
 
-import i from '@/constants/assets'
-
 import "./styles/index.scss";
+import Link from "next/link";
 
-type ContactProps = { id: string, title: KeyTextField, description?: KeyTextField, imageUrl?: string };
+type ContactProps = { id: string, title: KeyTextField, description?: KeyTextField, videoUrl?: string };
 
-const Contact = ({ id, title, description, imageUrl }: ContactProps) => {
+const Contact = ({ id, title, description, videoUrl }: ContactProps) => {
   return (
     <div id={id} className='contact'>
-      Contact
+      <div className='contactTextContainer'>
+        <h1 className='contactTitle'>{title}</h1>
+        <p className='contactDescription'>{description}</p>
+        <Link className='clickable cta' href='/contact'>Contact Us</Link>
+      </div>
+      <div className='contactVideoContainer'>
+        <video loop autoPlay muted className='contactVideo' src={videoUrl} />
+        <div className='contactVideoBackground' />
+      </div>
     </div>
   );
 };

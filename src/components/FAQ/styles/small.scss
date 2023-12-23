@@ -1,5 +1,36 @@
 @media (max-width: 750px) {
-  #faq {
+  .faq {
 
+    &#faqHome2 {
+      div#faqHome2TextContainer {
+        b {
+          font-size: 16px;
+        }
+
+        ul {
+          li {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .faqTitleContainer {
+      .faqTitle {
+        font-size: 24px;
+      }
+
+      .faqButton {
+        .faqButtonImage {
+          &.closed {
+            
+          }
+        }
+      }
+    }
+
+    .faqDescription {
+      font-size: 16px;
+    }
   }
 }

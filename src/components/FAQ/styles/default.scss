@@ -38,9 +38,10 @@
 
     .faqButton {
       .faqButtonImage {
+        width: 15px;
         &.closed {
-            transform: rotate(180deg);
-          }
+          transform: rotate(180deg);
+        }
       }
     }
   }

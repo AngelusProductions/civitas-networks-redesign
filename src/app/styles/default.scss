@@ -148,6 +148,10 @@
         }
       }
 
+      hr#homeServicesDivider {
+        display: none;
+      }
+
       div#homeServicesStatsContainer {
         display: flex;
         align-items: center;
@@ -291,6 +295,21 @@
       right: -10vw;
       width: 30vw;
       top: -10vw;
+    }
+  }
+
+  section#homeContactSection {
+    margin-bottom: 0 !important;
+
+    #cFlakesHomeContact1 {
+      right: -8vw;
+      width: 10vw;
+      top: 0vw;
+    }
+    #cFlakesHomeContact2 {
+      left: -5.3vw;
+      width: 15vw;
+      bottom: 0vw;
     }
   }
 }
