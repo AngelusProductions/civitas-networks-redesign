@@ -1,13 +1,28 @@
-@import '../../../constants/colors.scss';
+@import "../../../constants/colors.scss";
 
 .navMenu {
   &.closed {
     display: none !important;
   }
 
+  &.mobile {
+    li {
+      a {
+        color: $blue !important;
+      }
+    }
+  }
+
+  .navLinkDivider {
+    margin: 2.5%;
+    border: solid 1px $orange;
+    width: 94%;
+  }
+
   .navLink {
-    font-size: 1.75vw;
-    color: $white;
+    font-size: 16px;
+    margin-left: 2.5%;
+    color: white;
 
     .active {
       color: $orange;

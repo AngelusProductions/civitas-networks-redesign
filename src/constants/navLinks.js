@@ -2,7 +2,7 @@ export default [{
   name: 'Home',
   url: '/'
 }, {
-  name: 'About Civitas',
+  name: 'About Civitas Networks',
   url: '/about'
 }, {
   name: 'Services',

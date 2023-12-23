@@ -25,8 +25,8 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }: { isMenuOpen: boolean, setIsMenuO
       >
         Contact Us
       </Link>
-      <div id="navbarMobileContainer">
-        <Image
+      <div id="navbarMobileContainer" className={isMenuOpen ? 'open' : ''}>
+        {!isMenuOpen && <Image
           id="navbarContactIcon"
           className="clickable"
           src={i.icons.contact}
@@ -34,8 +34,8 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }: { isMenuOpen: boolean, setIsMenuO
           width={50}
           height={50}
           onClick={() => router.push("/contact")}
-        />
-        <Image
+        />}
+        {!isMenuOpen && <Image
           id="navbarMobileMenuIcon"
           className="clickable"
           src={i.icons.burger}
@@ -43,8 +43,22 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }: { isMenuOpen: boolean, setIsMenuO
           width={50}
           height={50}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-        />
-        <NavMenu id='navbarMobileMenu' closed={!isMenuOpen} /> 
+        />}
+        {isMenuOpen && <Image
+          id="navbarMobileMenuCloseIcon"
+          className="clickable"
+          src={i.icons.close}
+          alt="Close Icon"
+          width={50}
+          height={50}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        />}
+        <NavMenu 
+          id='navbarMobileMenu' 
+          closed={!isMenuOpen}
+          setIsMenuOpen={setIsMenuOpen}
+          isMobile
+        /> 
       </div>
     </nav>
   );

@@ -8,6 +8,7 @@ export default {
     icons: {
         arrowUp: `${bucketURL}/icons/arrowUp.svg`,
         burger: `${bucketURL}/icons/burger.svg`,
+        close: `${bucketURL}/icons/close.svg`,
         contact: `${bucketURL}/icons/contact.svg`,
     },
     cFlakes: {
