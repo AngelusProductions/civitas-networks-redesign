@@ -17,7 +17,7 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }: { isMenuOpen: boolean, setIsMenuO
   return (
     <nav id="navbar">
       <Logo id='navbarLogo' light />
-      <NavMenu id='navbarMenu' />
+      <NavMenu id='navbarMenu' isNavbar />
       <Link 
         href="/contact" 
         id="navbarContactButton"

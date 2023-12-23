@@ -11,6 +11,7 @@ type NavMenuProps = {
   closed?: boolean, 
   isMobile?: boolean,
   isFooter?: boolean,
+  isNavbar?: boolean,
   setIsMenuOpen?: Function
 };
 
@@ -19,13 +20,14 @@ const NavMenu = ({
   closed = false, 
   isMobile = false, 
   isFooter = false,
+  isNavbar = false,
   setIsMenuOpen = () => {} 
 }: NavMenuProps) => {
   const pathname = usePathname();
-  
+  const navLinkList = isNavbar ? navLinks.filter(({ name }) => name !== 'Contact') : navLinks;
   return (
     <ul id={id} className={`navMenu${closed ? ' closed' : ''}${isMobile ? ' mobile' : ''}${isFooter ? ' footer' : ''}`}>
-      {navLinks.map(({ url, name }) => <>
+      {navLinkList.map(({ url, name }) => <>
         <li className='navLink' key={name}>
           <Link 
             href={url} 
