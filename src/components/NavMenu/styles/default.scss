@@ -12,6 +12,17 @@
       }
     }
   }
+  
+  &.footer {
+    flex-direction: column;
+    width: 33%;
+    text-align: right;
+    li {
+      a {
+        color: white !important;
+      }
+    }
+  }
 
   .navLinkDivider {
     margin: 2.5%;

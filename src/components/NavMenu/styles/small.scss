@@ -1,7 +1,17 @@
 @media (max-width: 750px) {
   .navMenu {
-    .navLink {
-
+    &.footer {
+      text-align: left !important;
+      width: 100%;
+      
+      li {
+        margin: 0;
+        a {
+          
+        }
+      }
+      .navLink {
+      }
     }
   }
 }

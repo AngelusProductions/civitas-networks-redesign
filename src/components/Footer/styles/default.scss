@@ -1,9 +1,12 @@
-@import '../../../constants/colors.scss';
+@import "../../../constants/colors.scss";
 
 #footer {
-  padding: 80px;
-  font-size: 1vw;
-  font-family: 'Nunito';
+  padding: 50px;
+  font-size: 16px;
+  font-family: "Nunito";
+  background: $blue;
+  color: white;
+  margin-top: 80px;
 
   .footerSection {
     display: flex;
@@ -15,26 +18,21 @@
   #footerTop {
     align-items: flex-end;
 
-    #footerNavMenu {
-      display: flex;
-      flex-direction: row !important;
-      justify-content: space-between;
-      width: 40%;
-
-      li {
-        a {
-          font-size: 1vw;
-          color: black;
-        }
-      }
+    p#footerLogoText {
+      margin-top: 25px;
+      color: $orange;
     }
+  }
+
+  hr {
+    border: 1px solid $orange;
   }
 
   #footerBottom {
     #footerInfoContainer {
       display: flex;
       justify-content: space-between;
-      width: 25%;
+      width: 33%;
     }
   }
 }

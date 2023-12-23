@@ -10,6 +10,7 @@ type NavMenuProps = {
   id: string, 
   closed?: boolean, 
   isMobile?: boolean,
+  isFooter?: boolean,
   setIsMenuOpen?: Function
 };
 
@@ -17,12 +18,13 @@ const NavMenu = ({
   id, 
   closed = false, 
   isMobile = false, 
+  isFooter = false,
   setIsMenuOpen = () => {} 
 }: NavMenuProps) => {
   const pathname = usePathname();
   
   return (
-    <ul id={id} className={`navMenu${closed ? ' closed' : ''}${isMobile ? ' mobile' : ''}`}>
+    <ul id={id} className={`navMenu${closed ? ' closed' : ''}${isMobile ? ' mobile' : ''}${isFooter ? ' footer' : ''}`}>
       {navLinks.map(({ url, name }) => <>
         <li className='navLink' key={name}>
           <Link 

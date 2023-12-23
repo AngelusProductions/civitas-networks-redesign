@@ -1,47 +1,35 @@
-@media (max-width: 640px) {
+@media (max-width: 750px) {
   #footer {
     padding: 25px;
-    font-size: 2.5vw;
+    font-size: 16px;
 
     .footerSection {
       flex-direction: column;
-      align-items: center !important;
     }
 
     #footerTop {
+      align-items: flex-start !important;
       #footerNavMenu {
-        flex-wrap: wrap;
-        width: 100%;
-        margin-top: 25px;
-        height: 50px;
-        
-        li {
-          width: 49%;
-          align-items: center;
 
-          &:nth-child(even) {
-            text-align: right;
-          }
-          a {
-            font-size: 4vw;
-          }
-        }
+      }
+
+      #footerLogoText {
+        margin-bottom: 25px;
       }
     }
 
     #footerBottom {
       width: 100%;
-      align-items: center;
-      flex-direction: column-reverse;
+      flex-direction: column;
+      align-items: flex-start;
 
       #footerInfoContainer {
-        width: 100%;
-        margin-bottom: 25px;
+        width: 220px;
+        margin-top: 25px;
       }
 
       #footerRights {
-        font-weight: bold;
-        font-size: 3vw;
+
       }
     }
   }
