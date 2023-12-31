@@ -40,7 +40,68 @@
         right: -3.5vw;
         height: 48vw;
         width: 14vw;
-      } 
+      }
+    }
+  }
+
+  section#aboutSellingPointsSection {
+    img#cFlakesAboutSellingPoints1 {
+      left: -10vw;
+      top: -10vw;
+    }
+    img#cFlakesAboutSellingPoints2 {
+      bottom: 0;
+      right: -10vw;
+    }
+    div#aboutSellingPointsContainer {
+      background: $blue;
+      display: flex;
+      padding: 5%;
+
+      div#aboutSellingPointsImageContainer {
+        width: 75%;
+        img#aboutSellingPointsImage {
+          height: 100%;
+          object-fit: cover;
+          z-index: 99;
+          position: relative;
+        }
+        div#aboutSellingPointsImageBorder {
+          width: 15vw;
+          height: calc(100% - 4vw);
+          left: 2vw;
+          top: 2vw;
+        }
+      }
+      div#aboutSellingPointsTextContainer {
+        margin-left: 2.5%;
+        color: white;
+
+        h1#aboutSellingPointsTitle {
+          font-size: 40px;
+          width: 75%;
+        }
+        div.sellingPoint {
+          span.sellingPointNumber {
+            font-size: 32px;
+            margin-right: 2.5%;
+            color: $orange;
+            font-family: "Cabin";
+          }
+        }
+      }
+    }
+  }
+
+  section#aboutMissionStatementSection {
+
+    div#aboutMissionstatement {
+        display: flex;
+
+        div#aboutMissionStatementImageContainer {
+          width: 40%;
+          position: relative;
+        }
     }
   }
 }
