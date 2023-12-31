@@ -1,4 +1,5 @@
 'use client';
+import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -27,8 +28,8 @@ const NavMenu = ({
   const navLinkList = isNavbar ? navLinks.filter(({ name }) => name !== 'Contact') : navLinks;
   return (
     <ul id={id} className={`navMenu${closed ? ' closed' : ''}${isMobile ? ' mobile' : ''}${isFooter ? ' footer' : ''}`}>
-      {navLinkList.map(({ url, name }) => <>
-        <li className='navLink' key={name}>
+      {navLinkList.map(({ url, name }) => <React.Fragment key={name}>
+        <li className='navLink' key={url}>
           <Link 
             href={url} 
             className={pathname === url ? 'active' : ''}
@@ -38,7 +39,7 @@ const NavMenu = ({
           </Link>
         </li>
         {isMobile && <hr className='navLinkDivider' />}
-      </>)}
+      </React.Fragment>)}
     </ul>
   );
 };

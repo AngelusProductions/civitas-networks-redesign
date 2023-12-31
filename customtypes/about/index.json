@@ -27,6 +27,139 @@
           "placeholder": ""
         }
       },
+      "selling_points_title": {
+        "type": "Text",
+        "config": {
+          "label": "Selling Points Title",
+          "placeholder": ""
+        }
+      },
+      "selling_point_1": {
+        "type": "Text",
+        "config": {
+          "label": "Selling Point 1",
+          "placeholder": ""
+        }
+      },
+      "selling_point_2": {
+        "type": "Text",
+        "config": {
+          "label": "Selling Point 2",
+          "placeholder": ""
+        }
+      },
+      "selling_point_3": {
+        "type": "Text",
+        "config": {
+          "label": "Selling Point 3",
+          "placeholder": ""
+        }
+      },
+      "selling_point_4": {
+        "type": "Text",
+        "config": {
+          "label": "Selling Point 4",
+          "placeholder": ""
+        }
+      },
+      "mission_statement_title": {
+        "type": "Text",
+        "config": {
+          "label": "Mission Statement Title",
+          "placeholder": ""
+        }
+      },
+      "mission_statement_1": {
+        "type": "Text",
+        "config": {
+          "label": "Mission Statement 1",
+          "placeholder": ""
+        }
+      },
+      "mission_statement_2": {
+        "type": "Text",
+        "config": {
+          "label": "Mission Statement 2",
+          "placeholder": ""
+        }
+      },
+      "security_title": {
+        "type": "Text",
+        "config": {
+          "label": "Security Title",
+          "placeholder": ""
+        }
+      },
+      "security_description": {
+        "type": "Text",
+        "config": {
+          "label": "Security Description",
+          "placeholder": ""
+        }
+      },
+      "environment_title": {
+        "type": "Text",
+        "config": {
+          "label": "Environment Title",
+          "placeholder": ""
+        }
+      },
+      "environment_description_1": {
+        "type": "Text",
+        "config": {
+          "label": "Environment Description 1",
+          "placeholder": ""
+        }
+      },
+      "environment_description_2": {
+        "type": "Text",
+        "config": {
+          "label": "Environment Description 2",
+          "placeholder": ""
+        }
+      },
+      "environment_description_3": {
+        "type": "Text",
+        "config": {
+          "label": "Environment Description 3",
+          "placeholder": ""
+        }
+      },
+      "conclusion_title": {
+        "type": "Text",
+        "config": {
+          "label": "Conclusion Title",
+          "placeholder": ""
+        }
+      },
+      "conclusion_1": {
+        "type": "Text",
+        "config": {
+          "label": "Conclusion 1",
+          "placeholder": ""
+        }
+      },
+      "conclusion_2": {
+        "type": "Text",
+        "config": {
+          "label": "Conclusion 2",
+          "placeholder": ""
+        }
+      },
+      "contact_title": {
+        "type": "Text",
+        "config": {
+          "label": "Contact Title",
+          "placeholder": ""
+        }
+      },
+      "contact_description": {
+        "type": "Text",
+        "config": {
+          "label": "Contact Description",
+          "placeholder": ""
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

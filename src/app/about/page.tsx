@@ -7,7 +7,7 @@ const client = createClient();
 
 export default async function About() {
   const { data }: { data: About } = await client.getSingle("about");
-
+  console.log(data)
   return (
     <main>
       <h1>{data.title}</h1>
