@@ -15,7 +15,7 @@ const Contact = ({ id, title, description, videoUrl }: ContactProps) => {
       </div>
       <div className='contactVideoContainer'>
         <video loop autoPlay muted className='contactVideo' src={videoUrl} />
-        <div className='contactVideoBackground' />
+        <div className='contactVideoBackground border orange' />
       </div>
     </div>
   );

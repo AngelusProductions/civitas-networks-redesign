@@ -74,10 +74,10 @@ export default {
     },
     about: {
         top: `${bucketURL}/about/aboutTop.jpg`,
-        hero: `${bucketURL}/about/aboutHero.mov`,
+        hero: `${bucketURL}/about/aboutHero.mp4`,
         sellingPoints: `${bucketURL}/about/aboutSellingPoints.jpg`,
         missionStatement: `${bucketURL}/about/aboutMissionStatement.jpg`,
-        security: `${bucketURL}/about/aboutSecurity.mov`,
+        security: `${bucketURL}/about/aboutSecurity.mp4`,
         environment1: `${bucketURL}/about/aboutEnvironment1.jpg`,
         environment2: `${bucketURL}/about/aboutEnvironment2.mp4`,
         environment3: `${bucketURL}/about/aboutEnvironment3.jpg`,

@@ -17,24 +17,24 @@ export default async function Home() {
     const { data }: { data: Home } = await client.getSingle("home");
     
     return (
-        <main id="home">
-            <section id="homeTitleSection" className='homeSection'>
+        <main id="home" className='page'>
+            <section id="homeTitleSection" className='section'>
                 <h1 id='homeTitle'>{data.title}</h1>
                 <h2 id='homeSubtitle1'>{data.subtitle1}</h2>
                 <h2 id='homeSubtitle2'>{data.subtitle2}</h2>
                 <div id='homeHeroContainer'>
                     <video loop autoPlay muted id='homeHero' src={i.home.hero} />
                     {/* <img id='cFlakesHomeHero2' src={i.cFlakes.home.hero.two} className='cFlakes front' /> */}
-                    <div id='homeHeroImageBackground' />
+                    <div id='homeHeroImageBackground' className='border blue' />
                 </div>
                 <img id='cFlakesHomeHero1' src={i.cFlakes.home.hero.one} className='cFlakes back' />
             </section>
-            <section id='homeAboutSection' className='homeSection'>
+            <section id='homeAboutSection' className='section'>
                 <div id='homeAboutContainer'>
                     <div id='homeAboutImageContainer'>
                         <video loop autoPlay id='homeAboutImage' src={i.home.about} />
                         {/* <img id='cFlakesHomeAbout3' src={i.cFlakes.home.about.three} className='cFlakes front' /> */}
-                        <div id='homeAboutImageBackground' />
+                        <div id='homeAboutImageBackground' className='border orange' />
                     </div>
                     <div id='homeAboutTextContainer'>
                         <h1 id='homeAboutTitle'>About</h1>
@@ -44,7 +44,7 @@ export default async function Home() {
                 <img id='cFlakesHomeAbout1' src={i.cFlakes.home.about.one} className='cFlakes back' />
                 <img id='cFlakesHomeAbout2' src={i.cFlakes.home.about.two} className='cFlakes back' />
             </section>
-            <section id='homeServicesSection' className='homeSection'>
+            <section id='homeServicesSection' className='section'>
                 <div id='homeServicesTopContainer'>
                     <div id='homeServicesTitleContainer'>
                         <h1 id='homeServicesTitle' className='homeTitle'>Services</h1>
@@ -65,7 +65,7 @@ export default async function Home() {
                 <div id='homeServicesBottomContainer'>
                     <div id='homeServicesImageContainer'>
                         <img id='homeServicesImage' src={i.home.services} />
-                        <div id='homeServicesImageBackground' />
+                        <div id='homeServicesImageBackground' className='border blue' />
                         <img id='cFlakesHomeServices1' src={i.cFlakes.home.services.one} className='cFlakes front' />
                     </div>
                     <div id='homeServicesTextContainer'>
@@ -88,7 +88,7 @@ export default async function Home() {
                     </div>
                 </div>
             </section>
-            <section id='homeWhyCivitasSection' className='homeSection'>
+            <section id='homeWhyCivitasSection' className='section'>
                 <div id='homeWhyCivitasLeftContainer'>
                     <h1 id='homeWhyCivitasTitle' className='homeTitle'>{data.why_civitas_title}</h1>
                     <p className='homeWhyCivitasText'>{data.why_civitas_paragraph_one}</p>
@@ -102,7 +102,7 @@ export default async function Home() {
                     <img id='cFlakesHomeWhyCivitas1' src={i.cFlakes.home.whyCivitas.one} className='cFlakes back' />
                 </div>
             </section>
-            <section id='homeFaqSection' className='homeSection'>
+            <section id='homeFaqSection' className='section'>
                 <h1 id='homeFaqTitle' className='homeTitle'>FAQ</h1>
                 <img id='cFlakesHomeFaq1' src={i.cFlakes.home.faq.one} className='cFlakes back' />
                 <FAQ id='faqHome1' title={data.faq_one_title} description={data.faq_one_description} />
@@ -120,7 +120,7 @@ export default async function Home() {
                 <FAQ id='faqHome3' title={data.faq_three_title} description={data.faq_three_description} />
                 <FAQ id='faqHome4' title={data.faq_four_title} description={data.faq_four_description} />
             </section>
-            <section id='homeContactSection' className='homeSection'>
+            <section id='homeContactSection' className='section'>
                 <img id='cFlakesHomeContact1' src={i.cFlakes.home.contact.one} className='cFlakes back' />
                 <img id='cFlakesHomeContact2' src={i.cFlakes.home.contact.two} className='cFlakes back' />
                 <Contact 

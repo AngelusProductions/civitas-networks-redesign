@@ -1,0 +1,49 @@
+@media (min-width: 1024px) {
+  #about {
+    section#aboutTitleSection {
+      h1#aboutTitle {
+        font-size: 2.6vw;
+        width: 37%;
+      }
+
+      h2#aboutSubtitle {
+        width: 40%;
+        font-size: 1.7vw;
+        margin: 5% 0;
+      }
+
+      img#cFlakesAboutHero1 {
+      }
+
+      img#aboutTopImage {
+        width: 33%;
+      }
+
+      p#aboutTitleDescription {
+        width: 58%;
+        font-size: 1.1vw;
+        margin-bottom: 5%;
+      }
+
+      div#aboutHeroContainer {
+        img#cFlakesAboutHero2 {
+          width: 28vw;
+          right: 4vw;
+          top: -27vw;
+          transform: rotate(341deg);
+        }
+
+        div#aboutHeroImageBorder {
+          top: -2vw;
+          right: 8vw;
+          height: 35.5vw;
+          width: 11vw;
+        }
+        video#aboutHero {
+          width: 75%;
+          margin: auto;
+        }
+      }
+    }
+  }
+}

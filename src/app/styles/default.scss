@@ -1,26 +1,12 @@
 @import "../../constants/colors.scss";
 
 #home {
-  padding: 10%;
-  color: $blue;
-  overflow: hidden;
-
-  .homeSection {
-    position: relative;
-    margin-bottom: 10vw;
-  }
-
   .homeTitle {
     font-size: 4.8vw;
     font-family: "Cabin";
   }
 
   section#homeTitleSection {
-    h1,
-    h2 {
-      color: $blue;
-    }
-
     #homeTitle {
       font-size: 4.8vw;
       font-weight: bold;
@@ -48,18 +34,16 @@
       }
 
       #homeHeroImageBackground {
-        position: absolute;
         top: -5vw;
         right: -5vw;
         height: 59.5vw;
         width: 15vw;
-        background: $blue;
         z-index: -1;
       }
     }
 
     #cFlakesHomeHero1 {
-      top: 5vw;
+      top: -7vw;
       right: -10vw;
       width: 78vw;
     }
@@ -93,11 +77,9 @@
 
         #homeAboutImageBackground {
           height: 400px;
-          position: absolute;
           top: -25px;
           width: 150px;
           left: -25px;
-          background: $orange;
         }
       }
 
@@ -186,10 +168,8 @@
         }
       }
       div#homeServicesImageBackground {
-        background: $blue;
         height: 62vw;
         width: 21vw;
-        position: absolute;
         top: -3vw;
         left: -3vw;
         z-index: -1;

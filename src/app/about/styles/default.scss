@@ -1,0 +1,46 @@
+@import "../../../constants/colors.scss";
+
+#about {
+  section#aboutTitleSection {
+    h1#aboutTitle {
+      font-size: 4.8vw;
+      width: 70%;
+    }
+    h2#aboutSubtitle {
+      width: 62%;
+      font-size: 2.6vw;
+      margin: 10% 0;
+    }
+    img#cFlakesAboutHero1 {
+      width: 25vw;
+      top: -10vw;
+      left: -10vw;
+    }
+    img#aboutTopImage {
+      width: 30%;
+      position: absolute;
+      top: -5vw;
+      right: -5vw;
+    }
+    p#aboutTitleDescription {
+      width: 58%;
+      font-size: 1.6vw;
+      margin-bottom: 5%;
+    }
+    div#aboutHeroContainer {
+      position: relative;
+      img#cFlakesAboutHero2 {
+        width: 64vw;
+        right: -18vw;
+        top: -63vw;
+        transform: rotate(339deg);
+      }
+      div#aboutHeroImageBorder {
+        top: -3vw;
+        right: -3.5vw;
+        height: 48vw;
+        width: 14vw;
+      } 
+    }
+  }
+}
