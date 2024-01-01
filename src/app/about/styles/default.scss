@@ -79,7 +79,6 @@
 
         h1#aboutSellingPointsTitle {
           font-size: 40px;
-          width: 75%;
         }
         div.sellingPoint {
           span.sellingPointNumber {
@@ -94,14 +93,149 @@
   }
 
   section#aboutMissionStatementSection {
+    h1#aboutMissionStatementTitle {
+      font-size: 40px;
+      margin-bottom: 5%;
+    }
+    div#aboutMissionStatementContainer {
+      display: flex;
 
-    div#aboutMissionstatement {
-        display: flex;
+      div#aboutMissionStatementImageContainer {
+        width: 150%;
+        position: relative;
+        margin-right: 2.5%;
 
-        div#aboutMissionStatementImageContainer {
-          width: 40%;
+        img#aboutMissionStatementImage {
+          height: 100%;
+          object-fit: cover;
+          z-index: 99;
           position: relative;
         }
+        div#aboutMissionStatementImageBorder {
+          width: 18vw;
+          height: calc(100% - -4.7vw);
+          left: -2.5vw;
+          top: -2.5vw;
+        }
+      }
+
+      div#aboutMissionStatementTextContainer {
+        p#aboutMissionStatementText1 {
+          margin-bottom: 2.5%;
+        }
+      }
+    }
+  }
+
+  section#aboutSecuritySection {
+    div#aboutSecurityImageContainer {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      img#cFlakesAboutSecurity1 {
+        right: -10vw;
+        width: 25vw;
+        top: -25vw;
+      }
+      video#aboutSecurityImage {
+        width: 67%;
+      }
+      div#aboutSecurityImageBorder {
+        width: 15vw;
+        height: calc(100% + 5vw);
+        top: -2.5vw;
+        right: -2.5vw;
+      }
+    }
+    div#aboutSecurityContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5%;
+
+      h1#aboutSecurityTitle {
+        font-size: 40px;
+      }
+
+      div#aboutSecurityTextContainer {
+        width: 50%;
+
+        hr {
+          margin-top: 5%;
+          border: 1px solid $orange;
+        }
+      }
+    }
+  }
+
+  section#aboutEnvironmentSection {
+    div#aboutEnvironmentTitleContainer {
+      display: flex;
+      justify-content: flex-end;
+
+      img#aboutEnvironmentTitleImage {
+        width: 33%;
+        object-fit: cover;
+      }
+      h1#aboutEnvironmentTitle {
+        width: 33%;
+        font-size: 40px;
+        margin-left: 5%;
+      }
+      img#cFlakesAboutEnvironment1 {
+        left: -10vw;
+        top: -20vw;
+        width: 50vw;
+      }
+    }
+    .aboutEnvironmentContainer {
+      margin: 5% 0;
+
+      .aboutEnvironmentContentContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+
+        img#cFlakesAboutEnvironment2 {
+          right: -10vw;
+          top: -13vw;
+        }
+        img#cFlakesAboutEnvironment3 {
+          right: -10vw;
+          bottom: -13vw;
+        }
+        img#cFlakesAboutEnvironment4 {
+          right: -10vw;
+          top: -7vw;
+          width: 19vw;
+        }
+        p.aboutEnvironmentText {
+          margin-right: 5%;
+        }
+
+        .aboutEnvironmentImage {
+          width: 50%;
+          position: relative;
+        }
+      }
+      .aboutEnvironmentDivider {
+        margin: 5% 0;
+      }
+    }
+  }
+
+  section#aboutConclusionSection {
+    h1#aboutConclusionTitle {
+      font-size: 40px;
+    }
+    div#aboutConclusionTextContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5%;
+
+      p.aboutConclusionText {
+        width: 45%;
+      }
     }
   }
 }

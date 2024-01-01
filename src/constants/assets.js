@@ -57,11 +57,9 @@ export default {
                 three: `${bucketURL}/cFlakes/cFlakesAboutEnvironment3.svg`,
                 four: `${bucketURL}/cFlakes/cFlakesAboutEnvironment4.svg`,
             },
-            conclusion: {
-                one: `${bucketURL}/cFlakes/cFlakesAboutConclusion1.svg`,
-            },
             contact: {
                 one: `${bucketURL}/cFlakes/cFlakesAboutContact1.svg`,
+                two: `${bucketURL}/cFlakes/cFlakesAboutContact2.svg`,
             },
         }
     },
@@ -81,7 +79,7 @@ export default {
         environment1: `${bucketURL}/about/aboutEnvironment1.jpg`,
         environment2: `${bucketURL}/about/aboutEnvironment2.mp4`,
         environment3: `${bucketURL}/about/aboutEnvironment3.jpg`,
-        environment4: `${bucketURL}/about/aboutEnvironment4.mov`,
-        contact: `${bucketURL}/about/aboutContact.mov`,
+        environment4: `${bucketURL}/about/aboutEnvironment4.mp4`,
+        contact: `${bucketURL}/about/aboutContact.mp4`,
     }
 }

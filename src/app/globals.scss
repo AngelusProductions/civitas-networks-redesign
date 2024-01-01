@@ -45,6 +45,14 @@ video {
     z-index: 99;
 }
 
+img {
+  z-index: 99;
+}
+
+hr {
+  border: 1px solid $orange;
+}
+
 .border {
   position: absolute;
   border: none;
@@ -72,14 +80,13 @@ video {
 
 .cFlakes {
   position: absolute;
-  z-index: -99;
 
   &.back {
     z-index: -99;
   }
 
   &.front {
-    z-index: 99;
+    z-index: 100;
   }
 }
 

@@ -2,6 +2,8 @@ import { createClient } from "@/prismicio";
 
 import i from '@/constants/assets'
 
+import Contact from "@/components/Contact";
+
 import { About } from "./types";
 import { getMetadata } from "./metadata";
 
@@ -59,19 +61,79 @@ export default async function About() {
       </section>
       <section id='aboutMissionStatementSection' className='section'>
         <h1 id='aboutMissionStatementTitle'>{data.mission_statement_title}</h1>
-        <div id='aboutMissionStatement'>
+        <div id='aboutMissionStatementContainer'>
           <div id='aboutMissionStatementImageContainer'>
             <img id='cFlakesAboutMissionStatement1' src={i.cFlakes.about.missionStatement.one} className='cFlakes front' />
             <img id='aboutMissionStatementImage' src={i.about.missionStatement} />
             <div id='aboutMissionStatementImageBorder' className='border blue' />
           </div>
-          <div id='aboutMissionStatementContainer'>
-            <div id='aboutMissionStatementTextContainer'>
-              <p id='aboutMissionStatementText1'>{data.mission_statement_1}</p>
-              <p id='aboutMissionStatementText2'>{data.mission_statement_2}</p>
-            </div>
+          <div id='aboutMissionStatementTextContainer'>
+            <p id='aboutMissionStatementText1'>{data.mission_statement_1}</p>
+            <p id='aboutMissionStatementText2'>{data.mission_statement_2}</p>
           </div>
         </div>
+      </section>
+      <section id='aboutSecuritySection' className='section'>
+        <div id='aboutSecurityImageContainer'>
+          <img id='cFlakesAboutSecurity1' src={i.cFlakes.about.security.one} className='cFlakes back' />
+          <video loop autoPlay muted id="aboutSecurityImage" src={i.about.security} />
+          <div id='aboutSecurityImageBorder' className='border orange' />
+        </div>
+        <div id='aboutSecurityContainer'>
+          <h1 id='aboutSecurityTitle'>{data.security_title}</h1>
+          <div id='aboutSecurityTextContainer'>
+            <p id='aboutSecurityText'>{data.security_description}</p>
+            <hr id='aboutSecurityDivider' />
+          </div>
+        </div>      
+      </section>
+      <section id='aboutEnvironmentSection' className='section'>
+        <div id='aboutEnvironmentTitleContainer'>
+          <img id='cFlakesAboutEnvironment1' src={i.cFlakes.about.environment.one} className='cFlakes back' />
+          <img id='aboutEnvironmentTitleImage' src={i.about.environment1} />
+          <h1 id='aboutEnvironmentTitle'>{data.environment_title}</h1>
+        </div>
+        <div className='aboutEnvironmentContainer'>
+          <div className='aboutEnvironmentContentContainer'>
+            <img id='cFlakesAboutEnvironment2' src={i.cFlakes.about.environment.two} className='cFlakes back' />
+            <p className='aboutEnvironmentText'>{data.environment_description_1}</p>
+            <video loop autoPlay muted className='aboutEnvironmentImage' src={i.about.environment2} />
+          </div>
+          <hr className='aboutEnvironmentDivider' />
+        </div>
+        <div className='aboutEnvironmentContainer'>
+          <div className='aboutEnvironmentContentContainer'>
+            <img id='cFlakesAboutEnvironment3' src={i.cFlakes.about.environment.three} className='cFlakes back' />
+            <p className='aboutEnvironmentText'>{data.environment_description_2}</p>
+            <img className='aboutEnvironmentImage' src={i.about.environment3} />
+          </div>
+          <hr className='aboutEnvironmentDivider' />
+        </div>
+        <div className='aboutEnvironmentContainer'>
+          <div className='aboutEnvironmentContentContainer'>
+            <img id='cFlakesAboutEnvironment4' src={i.cFlakes.about.environment.four} className='cFlakes back' />
+            <p className='aboutEnvironmentText'>{data.environment_description_3}</p>
+            <video loop autoPlay muted className='aboutEnvironmentImage' src={i.about.environment4} />
+          </div>
+          <hr className='aboutEnvironmentDivider' />
+        </div>
+      </section>
+      <section id='aboutConclusionSection' className='section'>
+        <h1 id='aboutConclusionTitle'>{data.conclusion_title}</h1>
+        <div id="aboutConclusionTextContainer">
+          <p id='aboutConclusionText1' className='aboutConclusionText'>{data.conclusion_1}</p>
+          <p id='aboutConclusionText2' className='aboutConclusionText'>{data.conclusion_2}</p>
+        </div>
+      </section>
+      <section id='aboutContactSection'>
+          <img id='cFlakesAboutContact1' src={i.cFlakes.about.contact.one} className='cFlakes back' />
+          <img id='cFlakesAboutContact2' src={i.cFlakes.about.contact.two} className='cFlakes back' />
+          <Contact 
+              id='contactAbout' 
+              title={data.contact_title} 
+              description={data.contact_description} 
+              videoUrl={i.about.contact}
+          />
       </section>
     </main>
   );
