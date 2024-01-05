@@ -1,0 +1,138 @@
+@import "../../../constants/colors.scss";
+
+#services {
+  section#servicesTitleSection {
+    h1#servicesTitle {
+      font-size: 6vw;
+      width: 83%;
+    }
+    img#cFlakesServicesTop1 {
+      top: -15vw;
+      right: -10vw;
+      width: 45vw;
+    }
+    div#servicesTopContainer {
+      display: flex;
+      margin: 5% 0;
+      justify-content: space-between;
+      position: relative;
+
+      div#servicesTopLeftContainer {
+        width: 33%;
+        margin-top: 5%;
+
+        p#servicesTopLeftText {
+          margin-top: 5%;
+          font-size: 20px;
+        }
+      }
+
+      img#cFlakesServicesTop2 {
+        width: 33vw;
+        right: 22vw;
+        top: 6vw;
+      }
+
+      img#servicesTopRightImage {
+        width: 33%;
+        object-fit: cover;
+      }
+    }
+
+    hr#servicesTitleDivider1,
+    hr#servicesTitleDivider2 {
+      margin: 5% 0;
+    }
+  }
+  section#servicesExamplesSection {
+    h2#servicesExamplesTitle {
+      font-size: 40px;
+      width: 75%;
+      margin-bottom: 5%;
+    }
+    img#cFlakesServicesExamples1 {
+      top: -13vw;
+      right: -10vw;
+      width: 40vw;
+    }
+
+    #servicesExamplesContainer {
+      .servicesExample {
+        display: flex;
+        .servicesExampleImage {
+          width: 50%;
+          object-fit: cover;
+        }
+        .servicesExampleTextContainer {
+          margin-left: 5%;
+
+          h3.servicesExampleTitle {
+            font-size: 32px;
+            margin: 5% 0;
+          }
+        }
+      }
+
+      hr {
+        margin: 5% 0;
+      }
+    }
+  }
+
+  section#servicesBenefitsSection {
+    color: white;
+    background: $blue;
+    padding: 5%;
+
+    h2#servicesBenefitsTitle {
+      font-size: 40px;
+      width: 75%;
+      margin-bottom: 5%;
+    }
+
+    img#cFlakesServicesBenefits1 {
+      top: 0;
+      right: 0;
+      width: 33vw;
+    }
+
+    div#servicesBenefitsContainer {
+      div.servicesBenefit {
+        h3.servicesBenefitTitle {
+          font-size: 32px;
+          margin: 2.5% 0;
+        }
+        p.servicesBenefitDescription {
+          margin-bottom: 5%;
+        }
+      }
+    }
+  }
+
+  section#servicesFaqSection {
+    h1#servicesFaqTitle {
+      font-size: 40px;
+    }
+    #cFlakesServicesFaq1 {
+      right: -10vw;
+      width: 30vw;
+      top: -10vw;
+    }
+  }
+
+  section#servicesContactSection {
+    margin-bottom: 0 !important;
+
+    #cFlakesServicesContact1 {
+      right: -12vw;
+      width: 15vw;
+      bottom: 0vw;
+    }
+
+    #cFlakesServicesContact2 {
+      left: -10vw;
+      width: 10vw;
+      top: 0vw;
+    }
+  }
+}

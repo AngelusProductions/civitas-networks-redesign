@@ -6,7 +6,7 @@ import i from "@/constants/assets";
 import "./styles/index.scss";
 
 const Logo = ({ id, light = false }: { id: string, light: boolean }) => {
-  const src = light ? i.logos.light : i.logos.dark;
+  const src = light ? i.logos.white : i.logos.blue;
   return (
     <Link href='/'>
       <Image

@@ -2,14 +2,26 @@ export const bucketURL = 'https://storage.googleapis.com/civitas-networks'
 
 export default {
     logos: {
-        light: `${bucketURL}/logos/logoLight.svg`,
-        dark: `${bucketURL}/logos/logoDark.svg`,
+        white: `${bucketURL}/logos/logoWhite.svg`,
+        blue: `${bucketURL}/logos/logoBlue.svg`,
+        squan: `${bucketURL}/logos/logoSquan.png`,
+        meridian: `${bucketURL}/logos/logoMeridian.png`,
+        apex: `${bucketURL}/logos/logoApex.png`,
+        greenIsland: `${bucketURL}/logos/logoGreenIsland.png`,
+        dsg: `${bucketURL}/logos/logoDsg.png`,
     },
     icons: {
         arrowUp: `${bucketURL}/icons/arrowUp.svg`,
         burger: `${bucketURL}/icons/burger.svg`,
         close: `${bucketURL}/icons/close.svg`,
         contact: `${bucketURL}/icons/contact.svg`,
+    },
+    portraits: {
+        jerry: `${bucketURL}/portraits/jerryKirshman.png`,
+        luke: `${bucketURL}/portraits/lukeAngelus.png`,
+        john: `${bucketURL}/portraits/johnCollins.png`,
+        joseph: `${bucketURL}/portraits/josephMaio.png`,
+        frank: `${bucketURL}/portraits/frankDinucci.png`,
     },
     cFlakes: {
         home: {
@@ -61,6 +73,33 @@ export default {
                 one: `${bucketURL}/cFlakes/cFlakesAboutContact1.svg`,
                 two: `${bucketURL}/cFlakes/cFlakesAboutContact2.svg`,
             },
+        },
+        services: {
+            top: {
+                one: `${bucketURL}/cFlakes/cFlakesServicesTop1.svg`,
+                two: `${bucketURL}/cFlakes/cFlakesServicesTop2.svg`,
+            },
+            examples: {
+                one: `${bucketURL}/cFlakes/cFlakesServicesExamples1.svg`,
+            },
+            benefits: {
+                one: `${bucketURL}/cFlakes/cFlakesServicesBenefits1.svg`,
+            },
+            faq: {
+                one: `${bucketURL}/cFlakes/cFlakesServicesFAQ1.svg`,
+            },
+            contact: {
+                one: `${bucketURL}/cFlakes/cFlakesServicesContact1.svg`,
+                two: `${bucketURL}/cFlakes/cFlakesServicesContact2.svg`,
+            }
+        },
+        team: {
+            top: {
+                one: `${bucketURL}/cFlakes/cFlakesTeamTop1.svg`,
+            },
+            bottom: {
+                one: `${bucketURL}/cFlakes/cFlakesTeamBottom1.svg`,
+            },
         }
     },
     home: {
@@ -81,5 +120,14 @@ export default {
         environment3: `${bucketURL}/about/aboutEnvironment3.jpg`,
         environment4: `${bucketURL}/about/aboutEnvironment4.mp4`,
         contact: `${bucketURL}/about/aboutContact.mp4`,
+    },
+    services: {
+        top1: `${bucketURL}/services/servicesTop1.jpg`,
+        top2: `${bucketURL}/services/servicesTop2.jpg`,
+        example1: `${bucketURL}/services/servicesExample1.mp4`,
+        example2: `${bucketURL}/services/servicesExample2.jpg`,
+        example3: `${bucketURL}/services/servicesExample3.jpg`,
+        example4: `${bucketURL}/services/servicesExample4.mp4`,
+        contact: `${bucketURL}/services/servicesContact.mp4`,
     }
 }

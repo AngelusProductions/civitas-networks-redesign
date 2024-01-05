@@ -1,0 +1,276 @@
+{
+  "id": "services",
+  "label": "Services",
+  "format": "page",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "subtitle": {
+        "type": "Text",
+        "config": {
+          "label": "Subtitle",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": ""
+        }
+      },
+      "service_examples_title": {
+        "type": "Text",
+        "config": {
+          "label": "Service Examples Title",
+          "placeholder": ""
+        }
+      },
+      "service_example_title_1": {
+        "type": "Text",
+        "config": {
+          "label": "Service Example Title 1",
+          "placeholder": ""
+        }
+      },
+      "service_example_description_1": {
+        "type": "Text",
+        "config": {
+          "label": "Service Example Description 1",
+          "placeholder": ""
+        }
+      },
+      "service_example_title_2": {
+        "type": "Text",
+        "config": {
+          "label": "Service Example Title 2",
+          "placeholder": ""
+        }
+      },
+      "service_example_description_2": {
+        "type": "Text",
+        "config": {
+          "label": "Service Example Description 2",
+          "placeholder": ""
+        }
+      },
+      "service_example_title_3": {
+        "type": "Text",
+        "config": {
+          "label": "Service Example Title 3",
+          "placeholder": ""
+        }
+      },
+      "service_example_description_3": {
+        "type": "Text",
+        "config": {
+          "label": "Service Example Description 3",
+          "placeholder": ""
+        }
+      },
+      "service_example_title_4": {
+        "type": "Text",
+        "config": {
+          "label": "Service Example Title 4",
+          "placeholder": ""
+        }
+      },
+      "service_example_description_4": {
+        "type": "Text",
+        "config": {
+          "label": "Service Example Description 4",
+          "placeholder": ""
+        }
+      },
+      "benefits_title": {
+        "type": "Text",
+        "config": {
+          "label": "Benefits Title",
+          "placeholder": ""
+        }
+      },
+      "benefits_subtitle_1": {
+        "type": "Text",
+        "config": {
+          "label": "Benefits Subtitle 1",
+          "placeholder": ""
+        }
+      },
+      "benefits_description_1": {
+        "type": "Text",
+        "config": {
+          "label": "Benefits Description 1",
+          "placeholder": ""
+        }
+      },
+      "benefits_subtitle_2": {
+        "type": "Text",
+        "config": {
+          "label": "Benefits Subtitle 2",
+          "placeholder": ""
+        }
+      },
+      "benefits_description_2": {
+        "type": "Text",
+        "config": {
+          "label": "Benefits Description 2",
+          "placeholder": ""
+        }
+      },
+      "benefits_subtitle_3": {
+        "type": "Text",
+        "config": {
+          "label": "Benefits Subtitle 3",
+          "placeholder": ""
+        }
+      },
+      "benefits_description_3": {
+        "type": "Text",
+        "config": {
+          "label": "Benefits Description 3",
+          "placeholder": ""
+        }
+      },
+      "faq_question_1": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Question 1",
+          "placeholder": ""
+        }
+      },
+      "faq_answer_1": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Answer 1",
+          "placeholder": ""
+        }
+      },
+      "faq_question_2": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Question 2",
+          "placeholder": ""
+        }
+      },
+      "faq_answer_2_intro": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Answer 2 Intro",
+          "placeholder": ""
+        }
+      },
+      "faq_answer_2_bullet_1": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Answer 2 Bullet 1",
+          "placeholder": ""
+        }
+      },
+      "faq_answer_2_bullet_2": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Answer 2 Bullet 2",
+          "placeholder": ""
+        }
+      },
+      "faq_answer_2_bullet_3": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Answer 2 Bullet 3",
+          "placeholder": ""
+        }
+      },
+      "faq_answer_2_bullet_4": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Answer 2 Bullet 4",
+          "placeholder": ""
+        }
+      },
+      "faq_question_3": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Question 3",
+          "placeholder": ""
+        }
+      },
+      "faq_answer_3": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Answer 3",
+          "placeholder": ""
+        }
+      },
+      "faq_question_4": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Question 4",
+          "placeholder": ""
+        }
+      },
+      "faq_answer_4": {
+        "type": "Text",
+        "config": {
+          "label": "FAQ Answer 4",
+          "placeholder": ""
+        }
+      },
+      "contact_title": {
+        "type": "Text",
+        "config": {
+          "label": "Contact Title",
+          "placeholder": ""
+        }
+      },
+      "contact_description": {
+        "type": "Text",
+        "config": {
+          "label": "Contact Description",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      }
+    }
+  }
+}
