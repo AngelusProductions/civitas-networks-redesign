@@ -1,0 +1,41 @@
+@import "../../../constants/colors.scss";
+
+#team {
+  section#teamTitleSection {
+    h1#teamTitle {
+      font-size: 5vw;
+      width: 57%;
+    }
+    p#teamSubtitle {
+      width: 50%;
+      font-size: 20px;
+      margin: 7% auto;
+    }
+    img#cFlakesTeamTop1 {
+      top: -20vw;
+      right: -10vw;
+      width: 50vw;
+    }
+    img#cFlakesTeamTop2 {
+      left: -22vw;
+      top: 15vw;
+      width: 45vw;
+      transform: scaleX(-1) scaleY(-1) rotate(27deg);
+    }
+  }
+  section#teamPartnersSection {
+    h2#teamPartnersTitle {
+      font-size: 40px;
+    }
+    p#teamPartnersDescription {
+      width: 50%;
+      margin: 2.5% 0;
+    }
+    div#teamPartnersContainer {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 10%;
+    }
+  }
+}

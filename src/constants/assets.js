@@ -96,6 +96,7 @@ export default {
         team: {
             top: {
                 one: `${bucketURL}/cFlakes/cFlakesTeamTop1.svg`,
+                two: `${bucketURL}/cFlakes/cFlakesTeamTop2.svg`,
             },
             bottom: {
                 one: `${bucketURL}/cFlakes/cFlakesTeamBottom1.svg`,
