@@ -112,7 +112,7 @@ export default async function Services() {
           <img id='cFlakesServicesContact1' src={i.cFlakes.services.contact.one} className='cFlakes back' />
           <img id='cFlakesServicesContact2' src={i.cFlakes.services.contact.two} className='cFlakes back' />
           <Contact 
-              id='contactHome' 
+              id='contactServices' 
               title={data.contact_title} 
               description={data.contact_description} 
               videoUrl={i.services.contact}

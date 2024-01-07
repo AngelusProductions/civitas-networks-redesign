@@ -36,6 +36,7 @@ export default async function Team() {
         <h2 id='teamMembersTitle'>{data.family_title}</h2>
         <p id='teamMembersDescription'>{data.family_description}</p>
         <div id='teamMembersTopContainer'>
+          <img id='cFlakesTeamBottom1' src={i.cFlakes.team.bottom.one} className='cFlakes back' />
           <div className='teamMember'>
             <img className='teamMemberImage' src={i.portraits.jerry} />
             <div className='teamMemberTextContainer'>
@@ -58,6 +59,32 @@ export default async function Team() {
             </div>
           </div>
         </div>
+        <div id='teamMembersBottomContainer'>
+          <div className='teamMember'>
+            <img className='teamMemberImage' src={i.portraits.joseph} />
+            <div className='teamMemberTextContainer'>
+              <h3 className='teamMemberName'>Joseph Maio</h3>
+              <p className='teamMemberTitle'>Director Field Operations & Construction</p>
+            </div>
+          </div>
+          <div className='teamMember'>
+            <img className='teamMemberImage' src={i.portraits.frank} />
+            <div className='teamMemberTextContainer'>
+              <h3 className='teamMemberName'>Frank Dinucci</h3>
+              <p className='teamMemberTitle'>CFO</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id='teamContactSection'>
+          <img id='cFlakesTeamContact1' src={i.cFlakes.team.contact.one} className='cFlakes back' />
+          <img id='cFlakesTeamContact2' src={i.cFlakes.team.contact.two} className='cFlakes back' />
+          <Contact 
+              id='contactTeam' 
+              title={data.contact_title} 
+              description={data.contact_description} 
+              videoUrl={i.team.contact}
+          />
       </section>
     </main>
   );

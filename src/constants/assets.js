@@ -101,6 +101,10 @@ export default {
             bottom: {
                 one: `${bucketURL}/cFlakes/cFlakesTeamBottom1.svg`,
             },
+            contact: {
+                one: `${bucketURL}/cFlakes/cFlakesTeamContact1.svg`,
+                two: `${bucketURL}/cFlakes/cFlakesTeamContact2.svg`,
+            }
         }
     },
     home: {
@@ -130,5 +134,8 @@ export default {
         example3: `${bucketURL}/services/servicesExample3.jpg`,
         example4: `${bucketURL}/services/servicesExample4.mp4`,
         contact: `${bucketURL}/services/servicesContact.mp4`,
-    }
+    },
+    team: {
+        contact: `${bucketURL}/team/teamContact.mp4`,
+    },
 }
