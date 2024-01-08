@@ -1,11 +1,9 @@
 
 import type { Metadata } from "next";
 
-import { Services } from "./types";
-
 export async function getMetadata(client: any): Promise<Metadata> {
-  const { data } : { data: About } = await client.getSingle("services");
-
+  const contactData = await client.getSingle("contact");
+  const data = contactData.data;
   return {
     title: data.meta_title,
     description: data.meta_description,
