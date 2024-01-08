@@ -105,6 +105,11 @@ export default {
                 one: `${bucketURL}/cFlakes/cFlakesTeamContact1.svg`,
                 two: `${bucketURL}/cFlakes/cFlakesTeamContact2.svg`,
             }
+        },
+        contact: {
+            top: {
+                one: `${bucketURL}/cFlakes/cFlakesContactTop1.svg`,
+            }
         }
     },
     home: {

@@ -18,14 +18,14 @@ const Footer = () => {
       <hr />
       <div id='footerBottom' className='footerSection'>
         <p id='footerRights'>© {new Date().getFullYear()} Civitas Networks, All Rights Reserved</p>
-        <div id='footerInfoContainer'>
+        {/* <div id='footerInfoContainer'>
           <Link href="/privacy" id='footerPrivacy'>
             Privacy Policy
           </Link>
           <Link href="/terms" id='footerTerms'>
             Terms of Use
           </Link>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

@@ -1,138 +1,58 @@
 @import "../../../constants/colors.scss";
 
-#services {
-  section#servicesTitleSection {
-    h1#servicesTitle {
-      font-size: 6vw;
-      width: 83%;
-    }
-    img#cFlakesServicesTop1 {
-      top: -15vw;
-      right: -10vw;
-      width: 45vw;
-    }
-    div#servicesTopContainer {
-      display: flex;
-      margin: 5% 0;
-      justify-content: space-between;
-      position: relative;
-
-      div#servicesTopLeftContainer {
-        width: 33%;
-        margin-top: 5%;
-
-        p#servicesTopLeftText {
-          margin-top: 5%;
-          font-size: 20px;
-        }
-      }
-
-      img#cFlakesServicesTop2 {
-        width: 33vw;
-        right: 22vw;
-        top: 6vw;
-      }
-
-      img#servicesTopRightImage {
-        width: 33%;
-        object-fit: cover;
-      }
-    }
-
-    hr#servicesTitleDivider1,
-    hr#servicesTitleDivider2 {
-      margin: 5% 0;
-    }
+#contact {
+  h1#contactTitle {
+    font-size: 42px;
+    width: 50%;
   }
-  section#servicesExamplesSection {
-    h2#servicesExamplesTitle {
-      font-size: 40px;
-      width: 75%;
-      margin-bottom: 5%;
-    }
-    img#cFlakesServicesExamples1 {
-      top: -13vw;
-      right: -10vw;
-      width: 40vw;
-    }
+  p#contactDescription {
+    margin: 5% 0;
+    width: 50%;
+  }
+  img#cFlakesContactTop1 {
+    top: -10vw;
+    width: 75vw;
+    right: -10vw;
+  }
+  form#contactForm {
+    display: flex;
+    flex-direction: column;
 
-    #servicesExamplesContainer {
-      .servicesExample {
-        display: flex;
-        .servicesExampleImage {
-          width: 50%;
-          object-fit: cover;
-        }
-        .servicesExampleTextContainer {
-          margin-left: 5%;
+    input,
+    textarea {
+      margin: 2.5% 0;
+      border-bottom: 1px solid $blue;
+      padding: 2.5%;
+      width: 100%;
 
-          h3.servicesExampleTitle {
-            font-size: 32px;
-            margin: 5% 0;
-          }
-        }
+      &:focus-within {
+        outline: none;
+        border-bottom: 1px solid $orange;
       }
 
-      hr {
-        margin: 5% 0;
+      &::placeholder {
+        color: $blue;
       }
     }
-  }
 
-  section#servicesBenefitsSection {
-    color: white;
-    background: $blue;
-    padding: 5%;
-
-    h2#servicesBenefitsTitle {
-      font-size: 40px;
-      width: 75%;
-      margin-bottom: 5%;
+    textarea {
+      height: 150px;
     }
 
-    img#cFlakesServicesBenefits1 {
-      top: 0;
-      right: 0;
-      width: 33vw;
-    }
-
-    div#servicesBenefitsContainer {
-      div.servicesBenefit {
-        h3.servicesBenefitTitle {
-          font-size: 32px;
-          margin: 2.5% 0;
+    div.contactFormFieldContainer {
+        position: relative;
+        p.contactFormValidationError {
+            position: absolute;
+            left: 44%;
+            color: $orange;
+            bottom: -10px;
         }
-        p.servicesBenefitDescription {
-          margin-bottom: 5%;
-        }
-      }
-    }
-  }
-
-  section#servicesFaqSection {
-    h1#servicesFaqTitle {
-      font-size: 40px;
-    }
-    #cFlakesServicesFaq1 {
-      right: -10vw;
-      width: 30vw;
-      top: -10vw;
-    }
-  }
-
-  section#servicesContactSection {
-    margin-bottom: 0 !important;
-
-    #cFlakesServicesContact1 {
-      right: -12vw;
-      width: 15vw;
-      bottom: 0vw;
     }
 
-    #cFlakesServicesContact2 {
-      left: -10vw;
-      width: 10vw;
-      top: 0vw;
+    button {
+      width: 150px;
+      margin-right: 0;
+      margin-top: 2.5%;
     }
   }
 }
