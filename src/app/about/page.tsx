@@ -12,8 +12,9 @@ import "./styles/index.scss";
 const client = createClient();
 
 export default async function About() {
-  const { data }: { data: About } = await client.getSingle("about");
-  
+  const aboutData = await client.getSingle("about");
+  const data = aboutData.data;
+
   return (
     <main id='about' className='page'>
       <section id='aboutTitleSection' className='section'>
