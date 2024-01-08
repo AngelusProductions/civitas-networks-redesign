@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 import "./globals.scss";
+import "./fonts.scss";
 
 export default function RootLayout({
   children
