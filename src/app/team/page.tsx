@@ -12,7 +12,8 @@ import "./styles/index.scss";
 const client = createClient();
 
 export default async function Team() {
-  const { data }: { data: Team } = await client.getSingle("team");
+  const teamData = await client.getSingle("team");
+  const data = teamData.data;
   return (
     <main id='team' className='page'>
       <section id='teamTitleSection' className='section'>

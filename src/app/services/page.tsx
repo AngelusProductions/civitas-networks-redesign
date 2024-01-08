@@ -13,7 +13,8 @@ import "./styles/index.scss";
 const client = createClient();
 
 export default async function Services() {
-  const { data }: { data: Services } = await client.getSingle("services");
+  const servicesData = await client.getSingle("services");
+  const data = servicesData.data;
   return (
     <main id='services' className='page'>
       <section id='servicesTitleSection' className='section'>

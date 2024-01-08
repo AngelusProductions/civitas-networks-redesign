@@ -14,8 +14,8 @@ import Contact from "@/components/Contact";
 const client = createClient();
 
 export default async function Home() {
-    const { data }: { data: Home } = await client.getSingle("home");
-    
+    const homeData = await client.getSingle("home");
+    const data = homeData.data;
     return (
         <main id="home" className='page'>
             <section id="homeTitleSection" className='section'>

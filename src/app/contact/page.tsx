@@ -23,7 +23,7 @@ const emailRegex = /\S+@\S+\.\S+/;
 const phoneRegex = /^(?:\+?([0-9]{1,3})[-. ]?)?((\([0-9]{1,4}\))|[0-9]{1,4})(([-. ]?[0-9]{2,4}){2,})$/;
 
 export default function Contact() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState<any>(null);
 
   const [name, setName] = useState("");
   const [isNameError, setIsNameError] = useState(false);
