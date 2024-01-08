@@ -17,7 +17,7 @@
   form#contactForm {
     display: flex;
     flex-direction: column;
-
+    position: relative;
     input,
     textarea {
       margin: 2.5% 0;
@@ -47,6 +47,12 @@
             color: $orange;
             bottom: -10px;
         }
+    }
+
+    p#contactFormThankYou {
+        position: absolute;
+        bottom: 0;
+        color: $orange;
     }
 
     button {

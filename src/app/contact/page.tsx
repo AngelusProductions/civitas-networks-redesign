@@ -45,6 +45,8 @@ export default function Contact() {
   const [isMessageError, setIsMessageError] = useState(false);
   const [messageError, setMessageError] = useState("");
 
+  const [showThankYou, setShowThankYou] = useState(false);
+
   useEffect(() => {
     const fetchData = async () => {
       const response = await client.getSingle("contact");
@@ -105,16 +107,46 @@ export default function Contact() {
     || !emailRegex.test(email) || !phoneRegex.test(phone);
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const errors = getErrors()
     
     if(!errors) {
-      
-      return;
-    }
-  };
+      try {
+        setName("");
+        setEmail("");
+        setPhone("");
+        setLocation("");
+        setMessage("");
+        setShowThankYou(true);
+        setTimeout(() => {
+          setShowThankYou(false);
+        }, 5000);
+
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name,
+            email,
+            phone,
+            location,
+            message,
+          }),
+        });
+
+        if (!response.ok) {
+            throw new Error(`Error: ${response.statusText}`);
+        }
+
+        const result = await response.json();
+        console.log('Message sent:', result);
+      } catch (error) {
+          console.error('Failed to send message:', error);
+      }
+    };
+  }
 
   if(!data) {
     return <ClockLoader
@@ -150,6 +182,7 @@ export default function Contact() {
           <textarea value={message} placeholder="Message" onChange={(e) => setMessage(e.target.value)} />
           {isMessageError && <p className='contactFormValidationError'>{messageError}</p>}
         </div>
+        {showThankYou && <p id='contactFormThankYou'>Thank you for your message</p>} 
         <button type="submit" className='cta clickable'>Submit</button>
       </form>
     </main>

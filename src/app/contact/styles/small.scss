@@ -1,5 +1,42 @@
 @media (max-width: 750px) {
   #contact {
-    
+    h1#contactTitle {
+      font-size: 32px;
+      width: 100%;
+    }
+
+    p#contactDescription {
+      font-size: 16px;
+      width: 100%;
+    }
+
+    img#cFlakesContactTop1 {
+      width: 48vw;
+    }
+
+    form#contactForm {
+
+      input,
+      textarea {
+
+        &:focus-within {
+        }
+
+        &::placeholder {
+        }
+      }
+
+      textarea {
+      }
+
+      div.contactFormFieldContainer {
+
+        p.contactFormValidationError {
+        }
+      }
+
+      button {
+      }
+    }
   }
 }
