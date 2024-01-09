@@ -14,7 +14,7 @@ const Contact = ({ id, title, description, videoUrl }: ContactProps) => {
         <Link className='clickable cta' href='/contact'>Contact Us</Link>
       </div>
       <div className='contactVideoContainer'>
-        <video loop autoPlay muted className='contactVideo' src={videoUrl} />
+        <video loop autoPlay muted playsInline className='contactVideo' src={videoUrl} />
         <div className='contactVideoBackground border orange' />
       </div>
     </div>
