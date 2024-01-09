@@ -1,19 +1,33 @@
-import { createClient } from "@/prismicio";
+'use client';
+
+import { useState, useEffect } from "react";
 
 import i from '@/constants/assets'
+import { prismicEndpoint } from "@/constants/prismic";
 
 import Contact from "@/components/Contact";
 
 import { Team } from "./types";
-import { getMetadata } from "./metadata";
 
 import "./styles/index.scss";
 
-const client = createClient();
+export default function Team() {
+  const [data, setData] = useState<any>(null);
 
-export default async function Team() {
-  const teamData = await client.getSingle("team");
-  const data = teamData.data;
+  useEffect(() => {
+      fetch(prismicEndpoint)
+          .then(res => res.json()).then(res => {
+              const contactPage = res.results
+                  .find((result: any) => result.type === 'team')
+              setData(contactPage.data)
+          }).catch((err): void => {
+              console.log(err)
+          })
+  }, []);
+
+  if(!data) {
+      return <div style={{ height: '100vh' }}/>
+  }
   return (
     <main id='team' className='page'>
       <section id='teamTitleSection' className='section'>
@@ -89,8 +103,4 @@ export default async function Team() {
       </section>
     </main>
   );
-}
-
-export async function generateMetadata() {
-  return await getMetadata(client);
 }

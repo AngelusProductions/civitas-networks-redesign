@@ -238,4 +238,18 @@
       }
     }
   }
+
+  section#aboutContactSection {
+    position: relative;
+    img#cFlakesAboutContact1 {
+      left: -18vw;
+      top: -9vw;
+      width: 22vw;
+    }
+    img#cFlakesAboutContact2 {
+      right: -18vw;
+      bottom: 0vw;
+      width: 20vw;
+    }
+  }
 }

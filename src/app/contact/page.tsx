@@ -4,21 +4,13 @@
 
 import React, { useState, useEffect, useRef, CSSProperties } from "react";
 import emailjs from "emailjs-com";
-import { createClient } from "@/prismicio";
-import ClockLoader from "react-spinners/ClockLoader";
 
 import i from '@/constants/assets'
+import { prismicEndpoint } from '@/constants/prismic'
 
 import { Contact } from "./types";
 
 import "./styles/index.scss";
-
-const client = createClient();
-
-const spinnerCSS: CSSProperties = {
-  display: "block",
-  margin: "25vh auto 75vh auto",
-};
 
 const emailRegex = /\S+@\S+\.\S+/;
 const phoneRegex = /^(?:\+?([0-9]{1,3})[-. ]?)?((\([0-9]{1,4}\))|[0-9]{1,4})(([-. ]?[0-9]{2,4}){2,})$/;
@@ -48,13 +40,19 @@ export default function Contact() {
 
   const [showThankYou, setShowThankYou] = useState(false);
 
-  const contactFormRef = useRef();
+  const contactFormRef: any = useRef();
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await client.getSingle("contact");
-      setData(response.data);
-    };
+      await fetch(prismicEndpoint)
+        .then(res => res.json()).then(res => {
+          const contactPage = res.results
+            .find((result: any) => result.type === 'contact')
+          setData(contactPage.data)
+        }).catch((err): void => {
+          console.log(err)
+        })
+      }
 
     fetchData();
   }, []);
@@ -140,12 +138,7 @@ export default function Contact() {
   }
 
   if(!data) {
-    return <ClockLoader
-      color="#EC9006"
-      loading
-      cssOverride={spinnerCSS}
-      size={150}
-    />
+      return <div style={{ height: '100vh' }}/>
   }
   return (
     <main id='contact' className='page'>
