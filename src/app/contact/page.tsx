@@ -2,7 +2,8 @@
 /* @client */
 "use client";
 
-import React, { useState, useEffect, CSSProperties } from "react";
+import React, { useState, useEffect, useRef, CSSProperties } from "react";
+import emailjs from "emailjs-com";
 import { createClient } from "@/prismicio";
 import ClockLoader from "react-spinners/ClockLoader";
 
@@ -46,6 +47,8 @@ export default function Contact() {
   const [messageError, setMessageError] = useState("");
 
   const [showThankYou, setShowThankYou] = useState(false);
+
+  const contactFormRef = useRef();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -123,29 +126,17 @@ export default function Contact() {
         setTimeout(() => {
           setShowThankYou(false);
         }, 5000);
-
-        const response = await fetch('/api/contact', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            name,
-            email,
-            phone,
-            location,
-            message,
-          }),
-        });
-
-        if (!response.ok) {
-            throw new Error(`Error: ${response.statusText}`);
-        }
-
-        const result = await response.json();
-        console.log('Message sent:', result);
-      } catch (error) {
-          console.error('Failed to send message:', error);
+        
+        emailjs.sendForm(
+          "service_0vf8mgn",
+          "template_asu2bdm",
+          contactFormRef.current,
+          'zKuwyAD1BHYCSHPoz'
+        )
+      } catch (err) {
+        console.log(err);
       }
-    };
+    }
   }
 
   if(!data) {
@@ -161,25 +152,25 @@ export default function Contact() {
       <h1 id='contactTitle'>{data?.title}</h1>
       <p id='contactDescription'>{data?.subtitle}</p>
       <img id='cFlakesContactTop1' src={i.cFlakes.contact.top.one} className='cFlakes back' />
-      <form id='contactForm' onSubmit={handleSubmit}>
+      <form id='contactForm' onSubmit={handleSubmit} ref={contactFormRef}>
         <div className='contactFormFieldContainer'>
-          <input type="text" placeholder='Name' value={name} onChange={(e) => setName(e.target.value)} />
+          <input type="text" name='name' placeholder='Name' value={name} onChange={(e) => setName(e.target.value)} />
           {isNameError && <p className='contactFormValidationError'>{nameError}</p>}
         </div>
         <div className='contactFormFieldContainer'>
-          <input type="text" placeholder='Email address' value={email} onChange={(e) => setEmail(e.target.value)} />
+          <input type="text" name='email' placeholder='Email address' value={email} onChange={(e) => setEmail(e.target.value)} />
           {isEmailError && <p className='contactFormValidationError'>{emailError}</p>}
         </div>
         <div className='contactFormFieldContainer'>
-          <input type="tel" placeholder='Phone' value={phone} onChange={(e) => setPhone(e.target.value)} />
+          <input type="tel" name='phone' placeholder='Phone' value={phone} onChange={(e) => setPhone(e.target.value)} />
           {isPhoneError && <p className='contactFormValidationError'>{phoneError}</p>}
         </div>
         <div className='contactFormFieldContainer'>
-          <input type="text" placeholder='Location / Address' value={location} onChange={(e) => setLocation(e.target.value)} />
+          <input type="text" name='location' placeholder='Location / Address' value={location} onChange={(e) => setLocation(e.target.value)} />
           {isLocationError && <p className='contactFormValidationError'>{locationError}</p>}
         </div>
         <div className='contactFormFieldContainer'>
-          <textarea value={message} placeholder="Message" onChange={(e) => setMessage(e.target.value)} />
+          <textarea value={message} placeholder="Message" name='message' onChange={(e) => setMessage(e.target.value)} />
           {isMessageError && <p className='contactFormValidationError'>{messageError}</p>}
         </div>
         {showThankYou && <p id='contactFormThankYou'>Thank you for your message</p>} 
