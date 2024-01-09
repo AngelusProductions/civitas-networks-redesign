@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Serve the existing HTML file (e.g., team.html for /team)
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [L]
+
+# Fallback to index.html for routes not matching a static file
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
