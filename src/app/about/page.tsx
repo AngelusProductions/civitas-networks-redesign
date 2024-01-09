@@ -1,9 +1,9 @@
 'use client';
 
 import { useState, useEffect } from "react";
+import { createClient } from "@/prismicio";
 
 import i from '@/constants/assets'
-import { prismicEndpoint } from "@/constants/prismic";
 
 import Contact from "@/components/Contact";
 
@@ -11,18 +11,14 @@ import { About } from "./types";
 
 import "./styles/index.scss";
 
+const client = createClient();
+
 export default function About() {
   const [data, setData] = useState<any>(null);
 
   useEffect(() => {
-      fetch(prismicEndpoint)
-          .then(res => res.json()).then(res => {
-              const contactPage = res.results
-                  .find((result: any) => result.type === 'about')
-              setData(contactPage.data)
-          }).catch((err): void => {
-              console.log(err)
-          })
+    client.getSingle("about")
+      .then(({ data }) => setData(data))
   }, []);
 
   if(!data) {

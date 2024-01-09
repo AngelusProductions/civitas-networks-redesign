@@ -1,12 +1,10 @@
-// MyInteractiveComponent.js
-/* @client */
-"use client";
+'use client';
 
-import React, { useState, useEffect, useRef, CSSProperties } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { createClient } from "@/prismicio";
 import emailjs from "emailjs-com";
 
 import i from '@/constants/assets'
-import { prismicEndpoint } from '@/constants/prismic'
 
 import { Contact } from "./types";
 
@@ -14,6 +12,8 @@ import "./styles/index.scss";
 
 const emailRegex = /\S+@\S+\.\S+/;
 const phoneRegex = /^(?:\+?([0-9]{1,3})[-. ]?)?((\([0-9]{1,4}\))|[0-9]{1,4})(([-. ]?[0-9]{2,4}){2,})$/;
+
+const client = createClient();
 
 export default function Contact() {
   const [data, setData] = useState<any>(null);
@@ -43,18 +43,8 @@ export default function Contact() {
   const contactFormRef: any = useRef();
 
   useEffect(() => {
-    const fetchData = async () => {
-      await fetch(prismicEndpoint)
-        .then(res => res.json()).then(res => {
-          const contactPage = res.results
-            .find((result: any) => result.type === 'contact')
-          setData(contactPage.data)
-        }).catch((err): void => {
-          console.log(err)
-        })
-      }
-
-    fetchData();
+    client.getSingle("contact")
+      .then(({ data }) => setData(data))
   }, []);
 
   const getErrors = () => {
