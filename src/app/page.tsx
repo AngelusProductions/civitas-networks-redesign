@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from "react";
+import { createClient } from "@/prismicio";
 import Link from "next/link";
 
 import { Home } from "./types";
@@ -13,18 +14,25 @@ import Contact from "@/components/Contact";
 
 import "./styles/index.scss";
 
+const client = createClient();
+
 export default function Home() {
     const [data, setData] = useState<any>(null);
-
+    
+    debugger
     useEffect(() => {
-        fetch(prismicEndpoint)
-            .then(res => res.json()).then(res => {
-                const contactPage = res.results
-                    .find((result: any) => result.type === 'home')
-                setData(contactPage.data)
-            }).catch((err): void => {
-                console.log(err)
-            })
+        // fetch(prismicEndpoint)
+        //     .then(res => res.json()).then(res => {
+        //         const contactPage = res.results
+        //             .find((result: any) => result.type === 'home')
+        //         setData(contactPage.data)
+        //     }).catch((err): void => {
+        //         console.log(err)
+        //     })
+        client.getSingle("home").then((res) => {
+            debugger
+            setData(res.data)
+        })
     }, []);
 
     if(!data) {
