@@ -38,7 +38,7 @@ export default function About() {
         <p id='aboutTitleDescription'>{data.description}</p>
         <div id='aboutHeroContainer'>
           <img id='cFlakesAboutHero2' src={i.cFlakes.about.hero.two} className='cFlakes back' />
-          <video loop autoPlay muted id='aboutHero' src={i.about.hero} />
+          <video loop autoPlay muted playsInline id='aboutHero' src={i.about.hero} />
           <div id='aboutHeroImageBorder' className='border blue' />
         </div>
       </section>

@@ -51,7 +51,7 @@ export default function Services() {
         <img id='cFlakesServicesExamples1' src={i.cFlakes.services.examples.one} className='cFlakes back' />
         <div id='servicesExamplesContainer'>
           <div className='servicesExample'>
-            <video loop autoPlay muted className='servicesExampleImage' src={i.services.example1} />
+            <video loop autoPlay muted playsInline className='servicesExampleImage' src={i.services.example1} />
             <div className='servicesExampleTextContainer'>
               <h3 className='servicesExampleTitle'>{data.service_example_title_1}</h3>
               <p className='servicesExampleDescription'>{data.service_example_description_1}</p>
