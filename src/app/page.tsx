@@ -37,7 +37,7 @@ export default function Home() {
                 <h2 id='homeSubtitle1'>{data.subtitle1}</h2>
                 <h2 id='homeSubtitle2'>{data.subtitle2}</h2>
                 <div id='homeHeroContainer'>
-                    <video loop autoPlay muted playsInline id='homeHero' src={i.home.hero} />
+                    <video loop autoPlay muted id='homeHero' src={i.home.hero} />
                     {/* <img id='cFlakesHomeHero2' src={i.cFlakes.home.hero.two} className='cFlakes front' /> */}
                     <div id='homeHeroImageBackground' className='border blue' />
                 </div>
@@ -46,7 +46,7 @@ export default function Home() {
             <section id='homeAboutSection' className='section'>
                 <div id='homeAboutContainer'>
                     <div id='homeAboutImageContainer'>
-                        <video loop autoPlay muted playsInline id='homeAboutImage' src={i.home.about} />
+                        <video loop autoPlay muted id='homeAboutImage' src={i.home.about} />
                         {/* <img id='cFlakesHomeAbout3' src={i.cFlakes.home.about.three} className='cFlakes front' /> */}
                         <div id='homeAboutImageBackground' className='border orange' />
                     </div>

@@ -38,7 +38,7 @@ export default function About() {
         <p id='aboutTitleDescription'>{data.description}</p>
         <div id='aboutHeroContainer'>
           <img id='cFlakesAboutHero2' src={i.cFlakes.about.hero.two} className='cFlakes back' />
-          <video loop autoPlay muted playsInline id='aboutHero' src={i.about.hero} />
+          <video loop autoPlay muted id='aboutHero' src={i.about.hero} />
           <div id='aboutHeroImageBorder' className='border blue' />
         </div>
       </section>
@@ -90,7 +90,7 @@ export default function About() {
       <section id='aboutSecuritySection' className='section'>
         <div id='aboutSecurityImageContainer'>
           <img id='cFlakesAboutSecurity1' src={i.cFlakes.about.security.one} className='cFlakes back' />
-          <video loop autoPlay muted playsInline id="aboutSecurityImage" src={i.about.security} />
+          <video loop autoPlay muted id="aboutSecurityImage" src={i.about.security} />
           <div id='aboutSecurityImageBorder' className='border orange' />
         </div>
         <div id='aboutSecurityContainer'>
@@ -111,7 +111,7 @@ export default function About() {
           <div className='aboutEnvironmentContentContainer'>
             <img id='cFlakesAboutEnvironment2' src={i.cFlakes.about.environment.two} className='cFlakes back' />
             <p className='aboutEnvironmentText'>{data.environment_description_1}</p>
-            <video loop autoPlay muted playsInline className='aboutEnvironmentImage' src={i.about.environment2} />
+            <video loop autoPlay muted className='aboutEnvironmentImage' src={i.about.environment2} />
           </div>
           <hr className='aboutEnvironmentDivider' />
         </div>
@@ -127,7 +127,7 @@ export default function About() {
           <div className='aboutEnvironmentContentContainer'>
             <img id='cFlakesAboutEnvironment4' src={i.cFlakes.about.environment.four} className='cFlakes back' />
             <p className='aboutEnvironmentText'>{data.environment_description_3}</p>
-            <video loop autoPlay muted playsInline className='aboutEnvironmentImage' src={i.about.environment4} />
+            <video loop autoPlay muted className='aboutEnvironmentImage' src={i.about.environment4} />
           </div>
           <hr className='aboutEnvironmentDivider' />
         </div>
