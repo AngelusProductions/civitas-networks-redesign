@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { createClient } from "@/prismicio";
 import Link from "next/link";
 
@@ -17,10 +17,14 @@ const client = createClient();
 
 export default function Home() {
     const [data, setData] = useState<any>(null);
+    const videoRef = useRef<HTMLVideoElement>(null);
     
     useEffect(() => {
         client.getSingle("home")
             .then(({ data }) => setData(data))
+        if (videoRef.current) {
+            videoRef.current.play();
+        }
     }, []);
 
     if(!data) {
@@ -33,8 +37,16 @@ export default function Home() {
                 <h2 id='homeSubtitle1'>{data.subtitle1}</h2>
                 <h2 id='homeSubtitle2'>{data.subtitle2}</h2>
                 <div id='homeHeroContainer'>
-                    <video loop autoPlay muted playsInline id='homeHero' src={i.home.hero} />
-                    {/* <img id='cFlakesHomeHero2' src={i.cFlakes.home.hero.two} className='cFlakes front' /> */}
+                    <video 
+                        id='homeHero'
+                        loop 
+                        muted 
+                        autoPlay 
+                        playsInline 
+                        ref={videoRef}
+                        onLoadedData={e => e.currentTarget.play()}
+                        src={i.home.hero} 
+                    />
                     <div id='homeHeroImageBackground' className='border blue' />
                 </div>
                 <img id='cFlakesHomeHero1' src={i.cFlakes.home.hero.one} className='cFlakes back' />
@@ -43,7 +55,6 @@ export default function Home() {
                 <div id='homeAboutContainer'>
                     <div id='homeAboutImageContainer'>
                         <img id='homeAboutImage' src={i.home.about} />
-                        {/* <img id='cFlakesHomeAbout3' src={i.cFlakes.home.about.three} className='cFlakes front' /> */}
                         <div id='homeAboutImageBackground' className='border orange' />
                     </div>
                     <div id='homeAboutTextContainer'>
