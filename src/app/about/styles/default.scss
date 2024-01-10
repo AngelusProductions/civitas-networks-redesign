@@ -29,6 +29,12 @@
     }
     div#aboutHeroContainer {
       position: relative;
+      img#aboutHero {
+        width: 75%;
+        margin: auto;
+        z-index: 99;
+        position: relative;
+      }
       img#cFlakesAboutHero2 {
         width: 64vw;
         right: -18vw;
@@ -36,9 +42,9 @@
         transform: rotate(339deg);
       }
       div#aboutHeroImageBorder {
-        top: -3vw;
-        right: -3.5vw;
-        height: 48vw;
+        top: -2vw;
+        right: 7.8vw;
+        height: 41.5vw;
         width: 14vw;
       }
     }
@@ -139,7 +145,7 @@
         width: 25vw;
         top: -25vw;
       }
-      video#aboutSecurityImage {
+      img#aboutSecurityImage {
         width: 67%;
       }
       div#aboutSecurityImageBorder {

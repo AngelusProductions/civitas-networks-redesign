@@ -42,7 +42,7 @@ export default function Home() {
             <section id='homeAboutSection' className='section'>
                 <div id='homeAboutContainer'>
                     <div id='homeAboutImageContainer'>
-                        <video loop autoPlay muted id='homeAboutImage' src={i.home.about} />
+                        <img id='homeAboutImage' src={i.home.about} />
                         {/* <img id='cFlakesHomeAbout3' src={i.cFlakes.home.about.three} className='cFlakes front' /> */}
                         <div id='homeAboutImageBackground' className='border orange' />
                     </div>
@@ -138,6 +138,7 @@ export default function Home() {
                     title={data.contact_title} 
                     description={data.contact_description} 
                     videoUrl={i.home.contact}
+                    isImage
                 />
             </section>
         </main>

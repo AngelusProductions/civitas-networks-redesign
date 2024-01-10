@@ -34,9 +34,11 @@
         right: -34vw;
         width: 78vw;
         transform: rotate(81deg);
+        display: none;
       }
 
       #cFlakesHomeHero2 {
+        
       }
     }
 
@@ -50,6 +52,7 @@
         top: -39vw !important;
         width: 66vw !important;
         transform: scaleX(-1) rotate(45deg);
+        display: none;
       }
 
       #homeAboutContainer {

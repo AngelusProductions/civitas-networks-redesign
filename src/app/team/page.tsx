@@ -82,7 +82,7 @@ export default function Team() {
             <img className='teamMemberImage' src={i.portraits.frank} />
             <div className='teamMemberTextContainer'>
               <h3 className='teamMemberName'>Frank Dinucci</h3>
-              <p className='teamMemberTitle'>CFO</p>
+              <p className='teamMemberTitle'>Chief Financial Officer</p>
             </div>
           </div>
         </div>
@@ -95,6 +95,7 @@ export default function Team() {
               title={data.contact_title} 
               description={data.contact_description} 
               videoUrl={i.team.contact}
+              isImage
           />
       </section>
     </main>
