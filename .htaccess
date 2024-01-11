@@ -1,5 +1,9 @@
 RewriteEngine On
 
+# Redirect HTTP to HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 # Serve the existing HTML file (e.g., team.html for /team)
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [L]
