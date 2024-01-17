@@ -114,10 +114,10 @@ export default {
     },
     home: {
         hero: `${bucketURL}/home/homeHero.mp4`,
-        about: `${bucketURL}/home/homeAbout.jpg`,
+        about: `${bucketURL}/home/homeAbout.webp`,
         services: `${bucketURL}/home/homeServices.webp`,
-        whyCivitas: `${bucketURL}/home/homeWhyCivitas.jpeg`,
-        contact: `${bucketURL}/home/homeContact.jpg`,
+        whyCivitas: `${bucketURL}/home/homeWhyCivitas.webp`,
+        contact: `${bucketURL}/home/homeContact.webp`,
     },
     about: {
         top: `${bucketURL}/about/aboutTop.jpg`,
