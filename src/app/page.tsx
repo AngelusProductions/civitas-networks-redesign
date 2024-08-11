@@ -75,11 +75,11 @@ export default function Home() {
                     <div id='homeServicesStatsContainer'>
                         <div className='homeServicesStatContainer'>
                             <h1 className='homeServicesStatNumber'>{data.services_experience}</h1>
-                            <h2 className='homeServicesStatTitle'>EXPERIENCE</h2>
+                            <h2 className='homeServicesStatTitle'>PROJECTS</h2>
                         </div>
                         <div className='homeServicesStatContainer'>
                             <h1 className='homeServicesStatNumber'>{data.services_projects}</h1>
-                            <h2 className='homeServicesStatTitle'>PROJECTS</h2>
+                            <h2 className='homeServicesStatTitle'>EXPERIENCE</h2>
                         </div>
                     </div>
                 </div>

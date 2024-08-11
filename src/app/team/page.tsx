@@ -62,6 +62,8 @@ export default function Team() {
               <p className='teamMemberTitle'>Chief Revenue Officer</p>
             </div>
           </div>
+        </div>
+        <div id='teamMembersBottomContainer'>
           <div className='teamMember'>
             <img className='teamMemberImage' src={i.portraits.john} />
             <div className='teamMemberTextContainer'>
@@ -69,20 +71,11 @@ export default function Team() {
               <p className='teamMemberTitle'>Founder and COO</p>
             </div>
           </div>
-        </div>
-        <div id='teamMembersBottomContainer'>
           <div className='teamMember'>
             <img className='teamMemberImage' src={i.portraits.joseph} />
             <div className='teamMemberTextContainer'>
               <h3 className='teamMemberName'>Joseph Maio</h3>
               <p className='teamMemberTitle'>Director Field Operations & Construction</p>
-            </div>
-          </div>
-          <div className='teamMember'>
-            <img className='teamMemberImage' src={i.portraits.frank} />
-            <div className='teamMemberTextContainer'>
-              <h3 className='teamMemberName'>Frank Dinucci</h3>
-              <p className='teamMemberTitle'>Chief Financial Officer</p>
             </div>
           </div>
         </div>
